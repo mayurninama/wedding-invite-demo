@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <meta name="color-scheme" content="light only">
+  <title>Sumit Vyas &amp; Nidhi Dave — Shubh Vivah Royal Invitation | 22 Feb 2022</title>
+  <meta name="description" content="॥ ॐ श्री गणेशाय नमः ॥ Royal Wedding Invitation for Sumit Vyas &amp; Nidhi Dave on Tuesday, 22nd February 2022 at Fairfield By Marriott Goa Benaulim, South Goa.">
+
+  <!-- WhatsApp & Social Open Graph Preview Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sumit Vyas &amp; Nidhi Dave — Shubh Vivah Royal Invitation">
+  <meta property="og:description" content="Tuesday, 22nd February 2022 · Fairfield By Marriott Goa Benaulim, South Goa. Tap to open the royal doors and enter the Ganesha courtyard.">
+  <meta property="og:image" content="preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#5A100C">
+
+  <!-- Google Fonts: Cormorant Garamond, Jost, Noto Serif Devanagari, Hind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Hind:wght@400;500;600&family=Jost:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="gate-locked">
+
+  <!-- Floating Marigold & Red Rose Petals Canvas -->
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       STICKY TOP BAR (Brand, Door Style Toggle, Music, Language, #bride)
+       ======================================================================== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#courtyardHero" class="brand-crest">
+        <span class="star-icon">✦</span>
+        <span id="brandTitle">SUMIT &amp; NIDHI</span>
+      </a>
+      <div class="topbar-controls">
+        <button type="button" id="doorStyleBtn" class="pill-btn" aria-label="Switch Door Style">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M9 12h.01M15 12h.01"/></svg>
+          <span id="doorStyleLabel">Door Style</span>
+        </button>
+        <button type="button" id="audioToggleBtn" class="pill-btn" aria-pressed="false">
+          <span class="audio-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span id="audioToggleLabel">Music</span>
+        </button>
+        <button type="button" class="pill-btn" data-lang-toggle>हिंदी</button>
+        <button type="button" class="pill-btn hide-xs" data-side-toggle>#bride</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       SECTION 1: ROYAL 3D DOORS + MULTI-LAYER GANESHA COURTYARD PARALLAX HERO
+       (Matches uploaded reference images 1 & 2 with walk-through zoom parallax)
+       ======================================================================== -->
+  <section id="courtyardHero" class="courtyard-hero-section">
+    <div id="heroStage" class="hero-stage-frame">
+
+      <!-- ====================================================================
+           INSIDE VIEW: 3-LAYER GANESHA IDOL COURTYARD PARALLAX SCENE
+           Each layer scales at a different depth speed when doors open & on scroll
+           ==================================================================== -->
+      <div id="courtyardParallaxScene" class="courtyard-parallax-scene">
+
+        <!-- PARALLAX LAYER 1 (Deep Courtyard + Sacred Ganesha Idol on Velvet Chowki & Rangoli) -->
+        <div id="pxLayerDeep" class="px-layer px-deep">
+          <img src="assets/ganesha-courtyard.jpg" alt="Sacred Lord Ganesha Idol in Royal Courtyard with Marigold Garlands and Rangoli" class="px-img">
+          <div class="diya-warm-flicker" aria-hidden="true"></div>
+        </div>
+
+        <!-- PARALLAX LAYER 2 (Midground Marigold-Wrapped Haveli Pillars, Torans & Brass Samai Lamps) -->
+        <div id="pxLayerMid" class="px-layer px-mid" aria-hidden="true">
+          <img src="assets/courtyard-mid-frame.png" alt="" class="px-img">
+        </div>
+
+        <!-- PARALLAX LAYER 3 (Foreground Cusped Golden Jharokha Archway & Open Wooden Door Jambs) -->
+        <div id="pxLayerFg" class="px-layer px-fg" aria-hidden="true">
+          <img src="assets/courtyard-fg-arch.png" alt="" class="px-img">
+        </div>
+
+        <!-- Warm Golden Temple Sunlight Burst on Door Open -->
+        <div id="courtyardLightBurst" class="courtyard-light-burst" aria-hidden="true"></div>
+
+        <!-- BOTTOM ROYAL PLAQUE INSIDE COURTYARD (Exact match to Reference Image 1) -->
+        <div id="courtyardBottomPlaque" class="courtyard-plaque">
+          <div class="courtyard-plaque-inner">
+            <p id="celebrationBeginsTitle" class="plaque-headline">The Celebration Begins</p>
+            <p id="celebrationBeginsSub" class="plaque-subline">Enter the Sacred Celebrations of Sumit &amp; Nidhi</p>
+            <button type="button" id="exploreInviteBtn" class="explore-plaque-btn">
+              <span id="exploreInviteBtnText">Explore Invitation</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           OUTSIDE VIEW: 3D ROYAL CRIMSON & GOLD KALASH / PAISLEY DOUBLE DOORS
+           (Exact match to Reference Image 2 + optional Villa Bougainvillea mode)
+           ==================================================================== -->
+      <div id="doorGateOverlay" class="door-gate-overlay">
+
+        <!-- Top Marigold & Mango-Leaf Toran Header -->
+        <div class="toran-header-bar" aria-hidden="true">
+          <img src="assets/door-toran-top.jpg" alt="" class="toran-img">
+        </div>
+
+        <!-- Side Hanging Marigold Garlands -->
+        <div class="marigold-string left" aria-hidden="true"></div>
+        <div class="marigold-string right" aria-hidden="true"></div>
+
+        <!-- 3D Perspective Arched Door Frame -->
+        <div id="doors3DStage" class="doors-3d-stage">
+
+          <!-- LEFT 3D DOOR LEAF (Paisley, Lotus & Mangal Kalash with Swastika) -->
+          <div id="doorLeft" class="door-leaf left-leaf">
+            <img src="assets/door-leaf-left.jpg" alt="" class="door-leaf-img" draggable="false">
+            <div class="door-edge-thickness"></div>
+            <div class="door-shade-overlay"></div>
+          </div>
+
+          <!-- RIGHT 3D DOOR LEAF (Paisley, Lotus & Mangal Kalash with Swastika) -->
+          <div id="doorRight" class="door-leaf right-leaf">
+            <img src="assets/door-leaf-right.jpg" alt="" class="door-leaf-img" draggable="false">
+            <div class="door-edge-thickness"></div>
+            <div class="door-shade-overlay"></div>
+          </div>
+
+          <!-- PEARL-IVORY SCALLOPED WAX SEAL IN CENTER (With S & N + Embossed Ganesha) -->
+          <div id="gateWaxSeal" class="royal-wax-seal" role="button" tabindex="0" aria-label="Tap royal wax seal to open wedding invitation">
+            <img src="assets/wax-seal-blank.png" alt="" class="wax-seal-img" draggable="false">
+            <div class="wax-seal-content">
+              <span id="sealChar1" class="seal-letter l1">S</span>
+              <!-- Embossed Top-Right Mini Ganesha SVG -->
+              <svg class="seal-ganesha g-top" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M16 4 L12 10 L20 10 Z"/><path d="M10 12 C6 12 5 18 10 20"/><path d="M22 12 C26 12 27 18 22 20"/><path d="M16 11 C12 11 12 18 16 22 C18 24 17 27 14 27"/>
+              </svg>
+              <span class="seal-amp">&amp;</span>
+              <!-- Embossed Bottom-Left Mini Ganesha SVG -->
+              <svg class="seal-ganesha g-bot" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M16 4 L12 10 L20 10 Z"/><path d="M10 12 C6 12 5 18 10 20"/><path d="M22 12 C26 12 27 18 22 20"/><path d="M16 11 C12 11 12 18 16 22 C18 24 17 27 14 27"/>
+              </svg>
+              <span id="sealChar2" class="seal-letter l2">N</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Royal Champagne-Gold Plaque Button ("Open Invitation") -->
+        <div id="gateBottomBar" class="gate-bottom-bar">
+          <button type="button" id="openInvitationBtn" class="open-plaque-btn">
+            <span id="openInvitationBtnText">Open Invitation</span>
+          </button>
+          <p id="gateTapSubhint" class="gate-tap-subhint">Tap the seal or button to open palace doors &amp; play music</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MAIN SCROLLING CONTENT (Clean Flat-DOM Mobile Layout — Zero Zoom Bugs)
+       ======================================================================== -->
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         SECTION 2: COUPLE INVITATION, INTERACTIVE GOLD SCRATCH CARD & COUNTDOWN
+         ====================================================================== -->
+    <section id="coupleScratchSection" class="couple-scratch-section">
+      <div class="mobile-card-container">
+        <div class="invite-inner-card reveal">
+
+          <p id="cardSacredIntro" class="intro-shloka">॥ ॐ श्री गणेशाय नमः ॥</p>
+          <p id="cardTogetherText" class="intro-eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+
+          <h1 id="inviteCoupleNames" class="invite-names">
+            <span>SUMIT</span>
+            <span class="invite-amp">&amp;</span>
+            <span>NIDHI</span>
+          </h1>
+
+          <p id="cardRequestHonor" class="intro-honor">
+            REQUEST THE HONOR OF YOUR PRESENCE AT THE CELEBRATION OF THEIR MARRIAGE
+          </p>
+
+          <!-- INTERACTIVE GOLD FOIL SCRATCH-OFF CARD -->
+          <div class="scratch-card-wrapper">
+            <div id="scratchBaseCard" class="scratch-revealed-card">
+              <div class="revealed-icon">✦</div>
+              <h2 id="revealedDateText" class="revealed-date">TUESDAY, 22ND FEBRUARY 2022</h2>
+              <p id="revealedMuhuratText" class="revealed-muhurat">Shubh Muhurat Pheras · 6:30 PM IST</p>
+              <p id="revealedVenueText" class="revealed-venue">Fairfield By Marriott Goa Benaulim · South Goa</p>
+            </div>
+            <canvas id="scratchCanvas" width="340" height="120" class="scratch-canvas" aria-label="Scratch card to reveal wedding date"></canvas>
+          </div>
+
+          <div class="scratch-controls">
+            <button type="button" id="quickRevealBtn" class="quick-reveal-btn">
+              <span id="quickRevealBtnText">Quick Reveal Date ⚡</span>
+            </button>
+            <p id="scratchHintText" class="scratch-hint">Scratch with your finger or mouse</p>
+          </div>
+
+          <!-- LIVE 4-BOX COUNTDOWN TIMER -->
+          <div class="countdown-strip">
+            <div class="cd-cell">
+              <span id="scDays" class="cd-val">00</span>
+              <span id="scLblDays" class="cd-tag">DAYS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scHours" class="cd-val">00</span>
+              <span id="scLblHours" class="cd-tag">HOURS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scMins" class="cd-val">00</span>
+              <span id="scLblMins" class="cd-tag">MINS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scSecs" class="cd-val">00</span>
+              <span id="scLblSecs" class="cd-tag">SECS</span>
+            </div>
+          </div>
+
+          <!-- Venue & Event Itinerary Summary Card -->
+          <div class="venue-pavilion-card">
+            <h3 id="pavilionVenueName" class="pavilion-title">FAIRFIELD BY MARRIOTT GOA BENAULIM</h3>
+            <p id="pavilionVenueAddress" class="pavilion-sub">Royal Courtyard Mandap &amp; Palm Lawns · Benaulim, South Goa</p>
+
+            <div class="itinerary-header">
+              <span class="line-ornament"></span>
+              <span id="itineraryHeading">EVENT ITINERARY</span>
+              <span class="line-ornament"></span>
+            </div>
+
+            <div class="itinerary-list">
+              <div class="itin-row">
+                <span class="itin-time">11:00 AM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle1">HALDI &amp; MEHENDI CARNIVAL</strong>
+                  <span id="itSub1">21 Feb · Poolside Tropical Lawns · Marigold Yellow</span>
+                </div>
+              </div>
+              <div class="itin-row">
+                <span class="itin-time">7:30 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle2">SANGEET &amp; RING CEREMONY</strong>
+                  <span id="itSub2">21 Feb · Grand Ballroom · Royal Indo-Western</span>
+                </div>
+              </div>
+              <div class="itin-row highlight">
+                <span class="itin-time">4:00 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle3">BARAAT SWAGAT &amp; VEDIC PHERAS</strong>
+                  <span id="itSub3">22 Feb · Courtyard Mandap · Sunset Varmala &amp; Pheras</span>
+                </div>
+              </div>
+              <div class="itin-row">
+                <span class="itin-time">8:00 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle4">GRAND RECEPTION &amp; DINNER</strong>
+                  <span id="itSub4">22 Feb · Starlit Palm Lawns · Regal Evening Finery</span>
+                </div>
+              </div>
+            </div>
+
+            <p id="romanticQuote" class="romantic-quote">
+              "Two souls, one heart — a journey of love, sacred togetherness, and lifelong happiness."
+              <br><small>— Shubh Vivah · Sumit &amp; Nidhi</small>
+            </p>
+
+            <div class="dress-badge">✦ Traditional Royal Heritage / Festive</div>
+
+            <div class="action-buttons-row">
+              <button type="button" id="addToCalBtn" class="btn-cal-gold">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span id="addToCalBtnText">Add to Calendar</span>
+              </button>
+              <button type="button" id="openLocationModalBtn" class="btn-location-dark">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span id="locationBtnText">Location</span>
+              </button>
+            </div>
+
+            <button type="button" id="replayDoorBtn" class="replay-door-btn">
+              ↺ <span id="replayDoorText">Replay Door Opening</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: FORMAL STATIONERY FAMILY CARD
+         ====================================================================== -->
+    <section id="invitation" class="section-block">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="invitationEyebrow" class="eyebrow">Formal Wedding Stationery</p>
+          <h2 id="invitationTitle" class="sec-title">Cordial Family Invitation</h2>
+        </div>
+
+        <article class="stationery-card reveal">
+          <svg class="lotus-corner tl" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner tr" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner bl" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner br" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+
+          <p id="cardSacredTop" class="card-sacred-top">॥ ॐ श्री गणेशाय नमः ॥</p>
+          <p id="cardEldersLine" class="card-blessings-elders"></p>
+          <h3 id="cardHostsLine" class="card-hosts"></h3>
+          <p id="cardInviteBody" class="card-invite-body"></p>
+
+          <div class="card-couple-grid">
+            <div class="card-person-box">
+              <h4 id="cardPerson1Name" class="card-person-name">Sumit Vyas</h4>
+              <p id="cardPerson1Lineage" class="card-person-lineage"></p>
+            </div>
+            <div id="cardUnionWord" class="card-union-badge">&amp;</div>
+            <div class="card-person-box">
+              <h4 id="cardPerson2Name" class="card-person-name">Nidhi Dave</h4>
+              <p id="cardPerson2Lineage" class="card-person-lineage"></p>
+            </div>
+          </div>
+
+          <div class="card-venue-highlight">
+            <div id="cardDateHighlight" class="dt">Tuesday, 22nd February 2022</div>
+            <div id="cardVenueHighlight" class="vn">Fairfield By Marriott Goa Benaulim</div>
+            <div id="cardAddressHighlight" class="ad">Survey No 11/14, Vasvaddo, Benaulim, South Goa 403716</div>
+          </div>
+
+          <div class="card-footer-lines">
+            <div id="cardAwaitingLine"></div>
+            <div id="cardComplimentsLine" style="font-weight:600;color:var(--terracotta-dark)"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: DETAILED FUNCTIONS TIMELINE
+         ====================================================================== -->
+    <section id="functions" class="section-block alt-band">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="functionsEyebrow" class="eyebrow">Royal Wedding Itinerary</p>
+          <h2 id="functionsTitle" class="sec-title">Mangal Karya &amp; Celebrations</h2>
+          <p id="functionsSubtitle" class="sec-subtitle">Every ceremony will be hosted at Fairfield By Marriott Goa Benaulim</p>
+        </div>
+        <div id="timelineContainer" class="timeline-container">
+          <div class="timeline-track" aria-hidden="true">
+            <div id="timelineFill" class="timeline-fill"></div>
+          </div>
+          <div id="functionsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: INDIAN WEDDING PHOTO GALLERY
+         ====================================================================== -->
+    <section id="gallery" class="section-block">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="galleryEyebrow" class="eyebrow">Royal Moments &amp; Celebrations</p>
+          <h2 id="galleryTitle" class="sec-title">Jharokha Wedding Gallery</h2>
+          <p id="gallerySubtitle" class="sec-subtitle">Tap any royal frame to view full-screen</p>
+        </div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 6: CLOSING & R.S.V.P.
+         ====================================================================== -->
+    <section id="closing" class="section-block alt-band">
+      <div class="container">
+        <div class="closing-card reveal">
+          <p id="closingEyebrow" class="eyebrow">With Warmest Regards</p>
+          <h2 id="closingTitle" class="sec-title">Your Presence is Our Greatest Blessing</h2>
+          <p id="closingMessage" class="sec-subtitle" style="max-width:580px;margin:0 auto 18px"></p>
+
+          <h3 id="closingCoupleNames" style="font-family:var(--font-serif);font-size:32px;margin:8px 0 4px">Sumit Vyas &amp; Nidhi Dave</h3>
+          <p id="closingDateVenue" style="color:var(--terracotta-dark);font-weight:600;margin:0 0 6px">Tuesday, 22nd February 2022 · Fairfield By Marriott Goa Benaulim</p>
+          <p style="font-size:13px;color:var(--espresso-muted);margin:0">#SumitKiNidhi</p>
+
+          <div class="share-actions">
+            <button type="button" id="shareBtn" class="pill-btn primary">
+              <span id="shareBtnText">Share Invite</span>
+            </button>
+            <button type="button" id="whatsappBtn" class="pill-btn">
+              <span id="whatsappBtnText">WhatsApp</span>
+            </button>
+            <button type="button" id="copyLinkBtn" class="pill-btn">
+              <span id="copyLinkBtnText">Copy Link</span>
+            </button>
+            <button type="button" id="savePdfBtn" class="pill-btn">
+              <span id="savePdfBtnText">Save as PDF</span>
+            </button>
+          </div>
+
+          <div class="rsvp-box">
+            <h3 id="rsvpHeading">R.S.V.P. &amp; Hospitality Contacts</h3>
+            <div id="rsvpList" class="rsvp-list"></div>
+          </div>
+
+          <button type="button" id="backToTopBtn" class="pill-btn">
+            ↑ <span id="backToTopBtnText">Back to Top</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL: VENUE LOCATION POPUP
+       ======================================================================== -->
+  <div id="locationModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="locationModalTitle">
+    <div class="modal-card location-popup-card">
+      <div class="modal-header">
+        <h3 id="locationModalTitle" class="loc-title">VENUE LOCATION</h3>
+        <button type="button" id="locationModalCloseBtn" class="modal-x-btn" aria-label="Close">✕</button>
+      </div>
+      <div class="loc-venue-info">
+        <h4 id="locVenueName">FAIRFIELD BY MARRIOTT GOA BENAULIM</h4>
+        <p id="locVenueAddress">Survey No 11/14, Plot B C &amp; E, Vasvaddo, Benaulim, Salcete, South Goa, Goa 403716</p>
+      </div>
+      <div class="loc-illustration-box">
+        <svg viewBox="0 0 200 120" width="100%" height="90" fill="none">
+          <rect width="200" height="120" rx="8" fill="#241E1A"/>
+          <path d="M50 85 V50 L65 40 L80 50 V85 Z" fill="#4A3B32"/>
+          <path d="M120 85 V50 L135 40 L150 50 V85 Z" fill="#4A3B32"/>
+          <rect x="75" y="55" width="50" height="30" fill="#3B2D26"/>
+          <path d="M90 85 V68 Q100 60 110 68 V85 Z" fill="#C5A059"/>
+          <circle cx="100" cy="36" r="14" fill="#B85D4B"/>
+          <circle cx="100" cy="36" r="6" fill="#FFFDF9"/>
+          <polygon points="90,44 110,44 100,56" fill="#B85D4B"/>
+        </svg>
+        <span class="loc-pin-tag">Fairfield Marriott · Goa Resort</span>
+      </div>
+      <a id="openGoogleMapsBtn" href="https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim" target="_blank" rel="noopener" class="btn-open-maps-gold">
+        Open in Google Maps
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal: Lightbox for Gallery Photos -->
+  <div id="lightboxModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Gallery Lightbox">
+    <div class="modal-card location-popup-card">
+      <div class="modal-header">
+        <span id="lightboxCaption" style="font-weight:600;font-size:14.5px;color:#FFFDF9"></span>
+        <button type="button" id="lightboxCloseBtn" class="modal-x-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="lightboxStage" class="lightbox-stage"></div>
+      <div class="lightbox-nav">
+        <button type="button" id="lightboxPrevBtn" class="pill-btn">← Prev</button>
+        <button type="button" id="lightboxNextBtn" class="pill-btn">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Status Pill -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="config.js"></script>
+  <script src="i18n.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

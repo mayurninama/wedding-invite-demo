@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240" role="img" aria-label="Sumit and Nidhi Royal Wedding Monogram">
+  <defs>
+    <radialGradient id="sealBg" cx="50%" cy="42%" r="58%">
+      <stop offset="0%" stop-color="#FFFDF9"/>
+      <stop offset="65%" stop-color="#FAF5EE"/>
+      <stop offset="100%" stop-color="#EDE0CC"/>
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#D8B778"/>
+      <stop offset="50%" stop-color="#C29B58"/>
+      <stop offset="100%" stop-color="#9A7434"/>
+    </linearGradient>
+  </defs>
+  <!-- Outer scalloped Suryamandala ring -->
+  <circle cx="120" cy="120" r="112" fill="url(#sealBg)" stroke="url(#goldGrad)" stroke-width="2.2"/>
+  <circle cx="120" cy="120" r="103" fill="none" stroke="#C29B58" stroke-width="0.9" stroke-dasharray="3 3"/>
+  <circle cx="120" cy="120" r="95" fill="none" stroke="url(#goldGrad)" stroke-width="1.4"/>
+  <!-- 8-point lotus petal accents -->
+  <g stroke="#C29B58" stroke-width="1.1" fill="none" opacity="0.75">
+    <path d="M120 12 L125 22 L120 26 L115 22 Z" fill="#F7E8D0"/>
+    <path d="M120 228 L125 218 L120 214 L115 218 Z" fill="#F7E8D0"/>
+    <path d="M12 120 L22 125 L26 120 L22 115 Z" fill="#F7E8D0"/>
+    <path d="M228 120 L218 125 L214 120 L218 115 Z" fill="#F7E8D0"/>
+  </g>
+  <!-- Top miniature lotus crown -->
+  <path d="M120 42 C114 52, 106 54, 103 60 C111 61, 116 59, 120 55 C124 59, 129 61, 137 60 C134 54, 126 52, 120 42 Z" fill="none" stroke="url(#goldGrad)" stroke-width="1.4"/>
+  <circle cx="120" cy="36" r="2.5" fill="#B85D4B"/>
+  <!-- Monogram initials -->
+  <text x="86" y="138" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" font-weight="600" fill="#2E241F">S</text>
+  <text x="120" y="128" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-style="italic" font-size="30" fill="#B85D4B">&amp;</text>
+  <text x="155" y="138" text-anchor="middle" font-family="'Cormorant Garamond', Georgia, serif" font-size="68" font-weight="600" fill="#2E241F">N</text>
+  <!-- Bottom ornamental divider & date -->
+  <line x1="76" y1="162" x2="164" y2="162" stroke="#C29B58" stroke-width="1"/>
+  <rect x="117" y="159" width="6" height="6" transform="rotate(45 120 162)" fill="#B85D4B"/>
+  <text x="120" y="182" text-anchor="middle" font-family="'Jost', sans-serif" font-size="11" letter-spacing="3" fill="#8A6B36">22 · 02 · 2022</text>
+</svg>

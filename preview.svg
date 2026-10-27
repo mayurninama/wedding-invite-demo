@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FAF5EE"/>
+      <stop offset="50%" stop-color="#F1E6D6"/>
+      <stop offset="100%" stop-color="#F7E8D0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect x="36" y="36" width="1128" height="558" rx="12" fill="none" stroke="#C29B58" stroke-width="2"/>
+  <rect x="48" y="48" width="1104" height="534" rx="8" fill="none" stroke="#C29B58" stroke-width="0.8"/>
+  <text x="600" y="130" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#B85D4B" letter-spacing="4">॥ ॐ श्री गणेशाय नमः ॥</text>
+  <circle cx="600" cy="220" r="54" fill="#FAF5EE" stroke="#C29B58" stroke-width="2"/>
+  <text x="600" y="234" text-anchor="middle" font-family="Georgia, serif" font-size="38" fill="#2E241F">S &amp; N</text>
+  <text x="600" y="355" text-anchor="middle" font-family="Georgia, serif" font-size="68" fill="#2E241F">Sumit Vyas &amp; Nidhi Dave</text>
+  <text x="600" y="415" text-anchor="middle" font-family="sans-serif" font-size="22" letter-spacing="6" fill="#8A6B36">SHUBH VIVAH · 22 FEBRUARY 2022</text>
+  <text x="600" y="465" text-anchor="middle" font-family="Georgia, serif" font-style="italic" font-size="26" fill="#5C493E">Fairfield By Marriott Goa Benaulim · South Goa</text>
+</svg>

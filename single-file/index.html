@@ -1,0 +1,1931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <meta name="color-scheme" content="light only">
+  <title>Sumit Vyas &amp; Nidhi Dave — Shubh Vivah Royal Invitation | 22 Feb 2022</title>
+  <meta name="description" content="॥ ॐ श्री गणेशाय नमः ॥ Royal Wedding Invitation for Sumit Vyas &amp; Nidhi Dave on Tuesday, 22nd February 2022 at Fairfield By Marriott Goa Benaulim, South Goa.">
+
+  <!-- WhatsApp & Social Open Graph Preview Tags -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sumit Vyas &amp; Nidhi Dave — Shubh Vivah Royal Invitation">
+  <meta property="og:description" content="Tuesday, 22nd February 2022 · Fairfield By Marriott Goa Benaulim, South Goa. Tap to open the royal doors and enter the Ganesha courtyard.">
+  <meta property="og:image" content="preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#5A100C">
+
+  <!-- Google Fonts: Cormorant Garamond, Jost, Noto Serif Devanagari, Hind -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Hind:wght@400;500;600&family=Jost:wght@400;500;600;700&family=Noto+Serif+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" >
+</head>
+<body class="gate-locked">
+
+  <!-- Floating Marigold & Red Rose Petals Canvas -->
+  <canvas id="petalCanvas" aria-hidden="true"></canvas>
+
+  <!-- ========================================================================
+       STICKY TOP BAR (Brand, Door Style Toggle, Music, Language, #bride)
+       ======================================================================== -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#courtyardHero" class="brand-crest">
+        <span class="star-icon">✦</span>
+        <span id="brandTitle">SUMIT &amp; NIDHI</span>
+      </a>
+      <div class="topbar-controls">
+        <button type="button" id="doorStyleBtn" class="pill-btn" aria-label="Switch Door Style">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M12 3v18M9 12h.01M15 12h.01"/></svg>
+          <span id="doorStyleLabel">Door Style</span>
+        </button>
+        <button type="button" id="audioToggleBtn" class="pill-btn" aria-pressed="false">
+          <span class="audio-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span id="audioToggleLabel">Music</span>
+        </button>
+        <button type="button" class="pill-btn" data-lang-toggle>हिंदी</button>
+        <button type="button" class="pill-btn hide-xs" data-side-toggle>#bride</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       SECTION 1: ROYAL 3D DOORS + MULTI-LAYER GANESHA COURTYARD PARALLAX HERO
+       (Matches uploaded reference images 1 & 2 with walk-through zoom parallax)
+       ======================================================================== -->
+  <section id="courtyardHero" class="courtyard-hero-section">
+    <div id="heroStage" class="hero-stage-frame">
+
+      <!-- ====================================================================
+           INSIDE VIEW: 3-LAYER GANESHA IDOL COURTYARD PARALLAX SCENE
+           Each layer scales at a different depth speed when doors open & on scroll
+           ==================================================================== -->
+      <div id="courtyardParallaxScene" class="courtyard-parallax-scene">
+
+        <!-- PARALLAX LAYER 1 (Deep Courtyard + Sacred Ganesha Idol on Velvet Chowki & Rangoli) -->
+        <div id="pxLayerDeep" class="px-layer px-deep">
+          <img src="../assets/ganesha-courtyard.jpg" alt="Sacred Lord Ganesha Idol in Royal Courtyard with Marigold Garlands and Rangoli" class="px-img">
+          <div class="diya-warm-flicker" aria-hidden="true"></div>
+        </div>
+
+        <!-- PARALLAX LAYER 2 (Midground Marigold-Wrapped Haveli Pillars, Torans & Brass Samai Lamps) -->
+        <div id="pxLayerMid" class="px-layer px-mid" aria-hidden="true">
+          <img src="../assets/courtyard-mid-frame.png" alt="" class="px-img">
+        </div>
+
+        <!-- PARALLAX LAYER 3 (Foreground Cusped Golden Jharokha Archway & Open Wooden Door Jambs) -->
+        <div id="pxLayerFg" class="px-layer px-fg" aria-hidden="true">
+          <img src="../assets/courtyard-fg-arch.png" alt="" class="px-img">
+        </div>
+
+        <!-- Warm Golden Temple Sunlight Burst on Door Open -->
+        <div id="courtyardLightBurst" class="courtyard-light-burst" aria-hidden="true"></div>
+
+        <!-- BOTTOM ROYAL PLAQUE INSIDE COURTYARD (Exact match to Reference Image 1) -->
+        <div id="courtyardBottomPlaque" class="courtyard-plaque">
+          <div class="courtyard-plaque-inner">
+            <p id="celebrationBeginsTitle" class="plaque-headline">The Celebration Begins</p>
+            <p id="celebrationBeginsSub" class="plaque-subline">Enter the Sacred Celebrations of Sumit &amp; Nidhi</p>
+            <button type="button" id="exploreInviteBtn" class="explore-plaque-btn">
+              <span id="exploreInviteBtnText">Explore Invitation</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ====================================================================
+           OUTSIDE VIEW: 3D ROYAL CRIMSON & GOLD KALASH / PAISLEY DOUBLE DOORS
+           (Exact match to Reference Image 2 + optional Villa Bougainvillea mode)
+           ==================================================================== -->
+      <div id="doorGateOverlay" class="door-gate-overlay">
+
+        <!-- Top Marigold & Mango-Leaf Toran Header -->
+        <div class="toran-header-bar" aria-hidden="true">
+          <img src="../assets/door-toran-top.jpg" alt="" class="toran-img">
+        </div>
+
+        <!-- Side Hanging Marigold Garlands -->
+        <div class="marigold-string left" aria-hidden="true"></div>
+        <div class="marigold-string right" aria-hidden="true"></div>
+
+        <!-- 3D Perspective Arched Door Frame -->
+        <div id="doors3DStage" class="doors-3d-stage">
+
+          <!-- LEFT 3D DOOR LEAF (Paisley, Lotus & Mangal Kalash with Swastika) -->
+          <div id="doorLeft" class="door-leaf left-leaf">
+            <img src="../assets/door-leaf-left.jpg" alt="" class="door-leaf-img" draggable="false">
+            <div class="door-edge-thickness"></div>
+            <div class="door-shade-overlay"></div>
+          </div>
+
+          <!-- RIGHT 3D DOOR LEAF (Paisley, Lotus & Mangal Kalash with Swastika) -->
+          <div id="doorRight" class="door-leaf right-leaf">
+            <img src="../assets/door-leaf-right.jpg" alt="" class="door-leaf-img" draggable="false">
+            <div class="door-edge-thickness"></div>
+            <div class="door-shade-overlay"></div>
+          </div>
+
+          <!-- PEARL-IVORY SCALLOPED WAX SEAL IN CENTER (With S & N + Embossed Ganesha) -->
+          <div id="gateWaxSeal" class="royal-wax-seal" role="button" tabindex="0" aria-label="Tap royal wax seal to open wedding invitation">
+            <img src="../assets/wax-seal-blank.png" alt="" class="wax-seal-img" draggable="false">
+            <div class="wax-seal-content">
+              <span id="sealChar1" class="seal-letter l1">S</span>
+              <!-- Embossed Top-Right Mini Ganesha SVG -->
+              <svg class="seal-ganesha g-top" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M16 4 L12 10 L20 10 Z"/><path d="M10 12 C6 12 5 18 10 20"/><path d="M22 12 C26 12 27 18 22 20"/><path d="M16 11 C12 11 12 18 16 22 C18 24 17 27 14 27"/>
+              </svg>
+              <span class="seal-amp">&amp;</span>
+              <!-- Embossed Bottom-Left Mini Ganesha SVG -->
+              <svg class="seal-ganesha g-bot" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                <path d="M16 4 L12 10 L20 10 Z"/><path d="M10 12 C6 12 5 18 10 20"/><path d="M22 12 C26 12 27 18 22 20"/><path d="M16 11 C12 11 12 18 16 22 C18 24 17 27 14 27"/>
+              </svg>
+              <span id="sealChar2" class="seal-letter l2">N</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Bottom Royal Champagne-Gold Plaque Button ("Open Invitation") -->
+        <div id="gateBottomBar" class="gate-bottom-bar">
+          <button type="button" id="openInvitationBtn" class="open-plaque-btn">
+            <span id="openInvitationBtnText">Open Invitation</span>
+          </button>
+          <p id="gateTapSubhint" class="gate-tap-subhint">Tap the seal or button to open palace doors &amp; play music</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       MAIN SCROLLING CONTENT (Clean Flat-DOM Mobile Layout — Zero Zoom Bugs)
+       ======================================================================== -->
+  <main id="mainContent">
+
+    <!-- ======================================================================
+         SECTION 2: COUPLE INVITATION, INTERACTIVE GOLD SCRATCH CARD & COUNTDOWN
+         ====================================================================== -->
+    <section id="coupleScratchSection" class="couple-scratch-section">
+      <div class="mobile-card-container">
+        <div class="invite-inner-card reveal">
+
+          <p id="cardSacredIntro" class="intro-shloka">॥ ॐ श्री गणेशाय नमः ॥</p>
+          <p id="cardTogetherText" class="intro-eyebrow">TOGETHER WITH THEIR FAMILIES</p>
+
+          <h1 id="inviteCoupleNames" class="invite-names">
+            <span>SUMIT</span>
+            <span class="invite-amp">&amp;</span>
+            <span>NIDHI</span>
+          </h1>
+
+          <p id="cardRequestHonor" class="intro-honor">
+            REQUEST THE HONOR OF YOUR PRESENCE AT THE CELEBRATION OF THEIR MARRIAGE
+          </p>
+
+          <!-- INTERACTIVE GOLD FOIL SCRATCH-OFF CARD -->
+          <div class="scratch-card-wrapper">
+            <div id="scratchBaseCard" class="scratch-revealed-card">
+              <div class="revealed-icon">✦</div>
+              <h2 id="revealedDateText" class="revealed-date">TUESDAY, 22ND FEBRUARY 2022</h2>
+              <p id="revealedMuhuratText" class="revealed-muhurat">Shubh Muhurat Pheras · 6:30 PM IST</p>
+              <p id="revealedVenueText" class="revealed-venue">Fairfield By Marriott Goa Benaulim · South Goa</p>
+            </div>
+            <canvas id="scratchCanvas" width="340" height="120" class="scratch-canvas" aria-label="Scratch card to reveal wedding date"></canvas>
+          </div>
+
+          <div class="scratch-controls">
+            <button type="button" id="quickRevealBtn" class="quick-reveal-btn">
+              <span id="quickRevealBtnText">Quick Reveal Date ⚡</span>
+            </button>
+            <p id="scratchHintText" class="scratch-hint">Scratch with your finger or mouse</p>
+          </div>
+
+          <!-- LIVE 4-BOX COUNTDOWN TIMER -->
+          <div class="countdown-strip">
+            <div class="cd-cell">
+              <span id="scDays" class="cd-val">00</span>
+              <span id="scLblDays" class="cd-tag">DAYS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scHours" class="cd-val">00</span>
+              <span id="scLblHours" class="cd-tag">HOURS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scMins" class="cd-val">00</span>
+              <span id="scLblMins" class="cd-tag">MINS</span>
+            </div>
+            <div class="cd-cell">
+              <span id="scSecs" class="cd-val">00</span>
+              <span id="scLblSecs" class="cd-tag">SECS</span>
+            </div>
+          </div>
+
+          <!-- Venue & Event Itinerary Summary Card -->
+          <div class="venue-pavilion-card">
+            <h3 id="pavilionVenueName" class="pavilion-title">FAIRFIELD BY MARRIOTT GOA BENAULIM</h3>
+            <p id="pavilionVenueAddress" class="pavilion-sub">Royal Courtyard Mandap &amp; Palm Lawns · Benaulim, South Goa</p>
+
+            <div class="itinerary-header">
+              <span class="line-ornament"></span>
+              <span id="itineraryHeading">EVENT ITINERARY</span>
+              <span class="line-ornament"></span>
+            </div>
+
+            <div class="itinerary-list">
+              <div class="itin-row">
+                <span class="itin-time">11:00 AM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle1">HALDI &amp; MEHENDI CARNIVAL</strong>
+                  <span id="itSub1">21 Feb · Poolside Tropical Lawns · Marigold Yellow</span>
+                </div>
+              </div>
+              <div class="itin-row">
+                <span class="itin-time">7:30 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle2">SANGEET &amp; RING CEREMONY</strong>
+                  <span id="itSub2">21 Feb · Grand Ballroom · Royal Indo-Western</span>
+                </div>
+              </div>
+              <div class="itin-row highlight">
+                <span class="itin-time">4:00 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle3">BARAAT SWAGAT &amp; VEDIC PHERAS</strong>
+                  <span id="itSub3">22 Feb · Courtyard Mandap · Sunset Varmala &amp; Pheras</span>
+                </div>
+              </div>
+              <div class="itin-row">
+                <span class="itin-time">8:00 PM</span>
+                <div class="itin-desc">
+                  <strong id="itTitle4">GRAND RECEPTION &amp; DINNER</strong>
+                  <span id="itSub4">22 Feb · Starlit Palm Lawns · Regal Evening Finery</span>
+                </div>
+              </div>
+            </div>
+
+            <p id="romanticQuote" class="romantic-quote">
+              "Two souls, one heart — a journey of love, sacred togetherness, and lifelong happiness."
+              <br><small>— Shubh Vivah · Sumit &amp; Nidhi</small>
+            </p>
+
+            <div class="dress-badge">✦ Traditional Royal Heritage / Festive</div>
+
+            <div class="action-buttons-row">
+              <button type="button" id="addToCalBtn" class="btn-cal-gold">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                <span id="addToCalBtnText">Add to Calendar</span>
+              </button>
+              <button type="button" id="openLocationModalBtn" class="btn-location-dark">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 8 12 8 12s8-6.75 8-12a8 8 0 0 0-8-8Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span id="locationBtnText">Location</span>
+              </button>
+            </div>
+
+            <button type="button" id="replayDoorBtn" class="replay-door-btn">
+              ↺ <span id="replayDoorText">Replay Door Opening</span>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 3: FORMAL STATIONERY FAMILY CARD
+         ====================================================================== -->
+    <section id="invitation" class="section-block">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="invitationEyebrow" class="eyebrow">Formal Wedding Stationery</p>
+          <h2 id="invitationTitle" class="sec-title">Cordial Family Invitation</h2>
+        </div>
+
+        <article class="stationery-card reveal">
+          <svg class="lotus-corner tl" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner tr" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner bl" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+          <svg class="lotus-corner br" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><path d="M2 38 V10 Q2 2 10 2 H38"/><circle cx="10" cy="10" r="3" fill="#B85D4B"/></svg>
+
+          <p id="cardSacredTop" class="card-sacred-top">॥ ॐ श्री गणेशाय नमः ॥</p>
+          <p id="cardEldersLine" class="card-blessings-elders"></p>
+          <h3 id="cardHostsLine" class="card-hosts"></h3>
+          <p id="cardInviteBody" class="card-invite-body"></p>
+
+          <div class="card-couple-grid">
+            <div class="card-person-box">
+              <h4 id="cardPerson1Name" class="card-person-name">Sumit Vyas</h4>
+              <p id="cardPerson1Lineage" class="card-person-lineage"></p>
+            </div>
+            <div id="cardUnionWord" class="card-union-badge">&amp;</div>
+            <div class="card-person-box">
+              <h4 id="cardPerson2Name" class="card-person-name">Nidhi Dave</h4>
+              <p id="cardPerson2Lineage" class="card-person-lineage"></p>
+            </div>
+          </div>
+
+          <div class="card-venue-highlight">
+            <div id="cardDateHighlight" class="dt">Tuesday, 22nd February 2022</div>
+            <div id="cardVenueHighlight" class="vn">Fairfield By Marriott Goa Benaulim</div>
+            <div id="cardAddressHighlight" class="ad">Survey No 11/14, Vasvaddo, Benaulim, South Goa 403716</div>
+          </div>
+
+          <div class="card-footer-lines">
+            <div id="cardAwaitingLine"></div>
+            <div id="cardComplimentsLine" style="font-weight:600;color:var(--terracotta-dark)"></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 4: DETAILED FUNCTIONS TIMELINE
+         ====================================================================== -->
+    <section id="functions" class="section-block alt-band">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="functionsEyebrow" class="eyebrow">Royal Wedding Itinerary</p>
+          <h2 id="functionsTitle" class="sec-title">Mangal Karya &amp; Celebrations</h2>
+          <p id="functionsSubtitle" class="sec-subtitle">Every ceremony will be hosted at Fairfield By Marriott Goa Benaulim</p>
+        </div>
+        <div id="timelineContainer" class="timeline-container">
+          <div class="timeline-track" aria-hidden="true">
+            <div id="timelineFill" class="timeline-fill"></div>
+          </div>
+          <div id="functionsList"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 5: INDIAN WEDDING PHOTO GALLERY
+         ====================================================================== -->
+    <section id="gallery" class="section-block">
+      <div class="container">
+        <div class="sec-header reveal">
+          <p id="galleryEyebrow" class="eyebrow">Royal Moments &amp; Celebrations</p>
+          <h2 id="galleryTitle" class="sec-title">Jharokha Wedding Gallery</h2>
+          <p id="gallerySubtitle" class="sec-subtitle">Tap any royal frame to view full-screen</p>
+        </div>
+        <div id="galleryGrid" class="gallery-grid"></div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         SECTION 6: CLOSING & R.S.V.P.
+         ====================================================================== -->
+    <section id="closing" class="section-block alt-band">
+      <div class="container">
+        <div class="closing-card reveal">
+          <p id="closingEyebrow" class="eyebrow">With Warmest Regards</p>
+          <h2 id="closingTitle" class="sec-title">Your Presence is Our Greatest Blessing</h2>
+          <p id="closingMessage" class="sec-subtitle" style="max-width:580px;margin:0 auto 18px"></p>
+
+          <h3 id="closingCoupleNames" style="font-family:var(--font-serif);font-size:32px;margin:8px 0 4px">Sumit Vyas &amp; Nidhi Dave</h3>
+          <p id="closingDateVenue" style="color:var(--terracotta-dark);font-weight:600;margin:0 0 6px">Tuesday, 22nd February 2022 · Fairfield By Marriott Goa Benaulim</p>
+          <p style="font-size:13px;color:var(--espresso-muted);margin:0">#SumitKiNidhi</p>
+
+          <div class="share-actions">
+            <button type="button" id="shareBtn" class="pill-btn primary">
+              <span id="shareBtnText">Share Invite</span>
+            </button>
+            <button type="button" id="whatsappBtn" class="pill-btn">
+              <span id="whatsappBtnText">WhatsApp</span>
+            </button>
+            <button type="button" id="copyLinkBtn" class="pill-btn">
+              <span id="copyLinkBtnText">Copy Link</span>
+            </button>
+            <button type="button" id="savePdfBtn" class="pill-btn">
+              <span id="savePdfBtnText">Save as PDF</span>
+            </button>
+          </div>
+
+          <div class="rsvp-box">
+            <h3 id="rsvpHeading">R.S.V.P. &amp; Hospitality Contacts</h3>
+            <div id="rsvpList" class="rsvp-list"></div>
+          </div>
+
+          <button type="button" id="backToTopBtn" class="pill-btn">
+            ↑ <span id="backToTopBtnText">Back to Top</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========================================================================
+       MODAL: VENUE LOCATION POPUP
+       ======================================================================== -->
+  <div id="locationModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="locationModalTitle">
+    <div class="modal-card location-popup-card">
+      <div class="modal-header">
+        <h3 id="locationModalTitle" class="loc-title">VENUE LOCATION</h3>
+        <button type="button" id="locationModalCloseBtn" class="modal-x-btn" aria-label="Close">✕</button>
+      </div>
+      <div class="loc-venue-info">
+        <h4 id="locVenueName">FAIRFIELD BY MARRIOTT GOA BENAULIM</h4>
+        <p id="locVenueAddress">Survey No 11/14, Plot B C &amp; E, Vasvaddo, Benaulim, Salcete, South Goa, Goa 403716</p>
+      </div>
+      <div class="loc-illustration-box">
+        <svg viewBox="0 0 200 120" width="100%" height="90" fill="none">
+          <rect width="200" height="120" rx="8" fill="#241E1A"/>
+          <path d="M50 85 V50 L65 40 L80 50 V85 Z" fill="#4A3B32"/>
+          <path d="M120 85 V50 L135 40 L150 50 V85 Z" fill="#4A3B32"/>
+          <rect x="75" y="55" width="50" height="30" fill="#3B2D26"/>
+          <path d="M90 85 V68 Q100 60 110 68 V85 Z" fill="#C5A059"/>
+          <circle cx="100" cy="36" r="14" fill="#B85D4B"/>
+          <circle cx="100" cy="36" r="6" fill="#FFFDF9"/>
+          <polygon points="90,44 110,44 100,56" fill="#B85D4B"/>
+        </svg>
+        <span class="loc-pin-tag">Fairfield Marriott · Goa Resort</span>
+      </div>
+      <a id="openGoogleMapsBtn" href="https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim" target="_blank" rel="noopener" class="btn-open-maps-gold">
+        Open in Google Maps
+      </a>
+    </div>
+  </div>
+
+  <!-- Modal: Lightbox for Gallery Photos -->
+  <div id="lightboxModal" class="modal-backdrop" role="dialog" aria-modal="true" aria-label="Gallery Lightbox">
+    <div class="modal-card location-popup-card">
+      <div class="modal-header">
+        <span id="lightboxCaption" style="font-weight:600;font-size:14.5px;color:#FFFDF9"></span>
+        <button type="button" id="lightboxCloseBtn" class="modal-x-btn" aria-label="Close">✕</button>
+      </div>
+      <div id="lightboxStage" class="lightbox-stage"></div>
+      <div class="lightbox-nav">
+        <button type="button" id="lightboxPrevBtn" class="pill-btn">← Prev</button>
+        <button type="button" id="lightboxNextBtn" class="pill-btn">Next →</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Status Pill -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script>
+/**
+ * WEDDING CONFIGURATION — SUMIT VYAS & NIDHI DAVE
+ * Tradition: Royal North Indian / Rajasthani & Gujarati Brahmin Hindu Wedding (Shubh Vivah)
+ * Door Styles:
+ *   - 'bougainvillea': Arched Sage Green Villa Door with Cascading Bougainvillea, Vintage Lanterns & Chandelier Walkway
+ *   - 'sandstone': Carved Sandstone Palace Door with Brass Jali Lattice & Peacock Handles
+ */
+window.WEDDING_CONFIG = {
+  activeDoorStyle: "bougainvillea",
+
+  couple: {
+    groom: {
+      firstName: { en: "Sumit", hi: "सुमित" },
+      fullName: { en: "Sumit Vyas", hi: "चि. सुमित व्यास" },
+      shortTitle: { en: "Chi. Sumit", hi: "चि. सुमित" },
+      parents: {
+        en: "Grandson of Late Smt. Saraswati Devi & Late Pandit Rameshwar Prasad Vyas\nSon of Smt. Kavita Vyas & Shri Rajeshwar Vyas",
+        hi: "सुपौत्र: स्व. श्रीमती सरस्वती देवी एवं स्व. पं. रामेश्वर प्रसाद व्यास\nसुपुत्र: श्रीमती कविता व्यास एवं श्री राजेश्वर व्यास"
+      },
+      familyName: { en: "The Vyas Family", hi: "व्यास परिवार" }
+    },
+    bride: {
+      firstName: { en: "Nidhi", hi: "निधि" },
+      fullName: { en: "Nidhi Dave", hi: "आयु. निधि दवे" },
+      shortTitle: { en: "Sushri Nidhi", hi: "आयु. निधि" },
+      parents: {
+        en: "Granddaughter of Late Smt. Shantaben & Late Shri Harishankar Dave\nDaughter of Smt. Meenakshi Dave & Shri Devendra Dave",
+        hi: "सुपौत्री: स्व. श्रीमती शांताबेन एवं स्व. श्री हरिशंकर दवे\nसुपुत्री: श्रीमती मीनाक्षी दवे एवं श्री देवेन्द्र दवे"
+      },
+      familyName: { en: "The Dave Family", hi: "दवे परिवार" }
+    },
+    monogram: {
+      groomFirst: "S & N",
+      brideFirst: "N & S"
+    }
+  },
+
+  wedding: {
+    dateDisplay: {
+      en: "Tuesday, 22nd February 2022",
+      hi: "मंगलवार, २२ फरवरी २०२२"
+    },
+    shortDate: {
+      en: "22 · 02 · 2022",
+      hi: "२२ · ०२ · २०२२"
+    },
+    hashtag: "#SumitKiNidhi",
+    city: {
+      en: "Benaulim, South Goa",
+      hi: "बेनौलिम, दक्षिण गोवा"
+    },
+    venueName: {
+      en: "Fairfield By Marriott Goa Benaulim",
+      hi: "फेयरफील्ड बाय मैरियट गोवा बेनौलिम"
+    },
+    venueAddress: {
+      en: "Survey No 11/14, Plot B C & E, Vasvaddo, Benaulim, Salcete, South Goa, Goa 403716",
+      hi: "सर्वे नं. ११/१४, वासवड्डो, बेनौलिम, साल्सेते, दक्षिण गोवा, गोवा ४०३७१६"
+    },
+    googleMapsUrl: "https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim",
+    timezone: "Asia/Kolkata",
+    ceremonyISO: "2022-02-22T18:30:00+05:30",
+    ceremonyEndISO: "2022-02-22T23:30:00+05:30",
+    countdownModeDefault: "live_preview",
+    previewFutureISO: "2027-02-22T18:30:00+05:30"
+  },
+
+  assets: {
+    monogramSrc: "monogram.svg",
+    audioSrc: "../song.mp3",
+    audioVolume: 0.5,
+    videoUrl: "",
+    ogImage: "preview.svg"
+  },
+
+  scratchCard: {
+    enabled: true,
+    title: {
+      en: "Scratch to reveal wedding date...",
+      hi: "शुभ विवाह की पावन तिथि जानने के लिए स्क्रैच करें..."
+    },
+    subtitle: {
+      en: "Scratch with your finger or mouse",
+      hi: "उंगली या माउस से धीरे-धीरे स्क्रैच करें"
+    },
+    quickBtn: {
+      en: "Quick Reveal Date ⚡",
+      hi: "त्वरित तिथि देखें ⚡"
+    },
+    revealedNote: {
+      en: "Auspicious Date Revealed! Shubh Muhurat Pheras at Sunset",
+      hi: "शुभ मुहूर्त प्रकट हुआ! गोधूलि वेला में पाणिग्रहण संस्कार"
+    }
+  },
+
+  invitationCard: {
+    groomSideHost: {
+      hostsLine: {
+        en: "Smt. Kavita Vyas & Shri Rajeshwar Vyas",
+        hi: "श्रीमती कविता व्यास एवं श्री राजेश्वर व्यास"
+      },
+      blessingsLine: {
+        en: "With the heavenly blessings of Late Smt. Saraswati Devi & Late Pandit Rameshwar Prasad Vyas",
+        hi: "स्व. श्रीमती सरस्वती देवी एवं स्व. पं. रामेश्वर प्रसाद व्यास के दिव्य आशीर्वाद से"
+      },
+      inviteText: {
+        en: "cordially request the honour of your gracious presence and blessings with family on the auspicious occasion of the Shubh Vivah of their beloved son",
+        hi: "अपने लाड़ले सुपुत्र के शुभ विवाह के पावन अवसर पर सपरिवार आपकी गरिमामयी उपस्थिति एवं स्नेहिल आशीर्वाद हेतु सादर निमंत्रण प्रेषित करते हैं"
+      },
+      awaitingLine: {
+        en: "Awaiting Your Gracious Presence: Vikram Vyas, Neha Vyas, Rohan Vyas & All Members of the Vyas Parivar",
+        hi: "दर्शनाभिलाषी: विक्रम व्यास, नेहा व्यास, रोहन व्यास एवं समस्त व्यास परिवार"
+      },
+      complimentsLine: {
+        en: "With Best Compliments From: The Vyas & Dave Families, Friends & Relatives",
+        hi: "विनीत: समस्त व्यास एवं दवे परिवार तथा इष्टमित्र"
+      }
+    },
+    brideSideHost: {
+      hostsLine: {
+        en: "Smt. Meenakshi Dave & Shri Devendra Dave",
+        hi: "श्रीमती मीनाक्षी दवे एवं श्री देवेन्द्र दवे"
+      },
+      blessingsLine: {
+        en: "With the heavenly blessings of Late Smt. Shantaben & Late Shri Harishankar Dave",
+        hi: "स्व. श्रीमती शांताबेन एवं स्व. श्री हरिशंकर दवे के दिव्य आशीर्वाद से"
+      },
+      inviteText: {
+        en: "cordially request the honour of your gracious presence and blessings with family on the auspicious occasion of the Shubh Vivah of their beloved daughter",
+        hi: "अपनी लाड़ली सुपुत्री के शुभ विवाह के पावन अवसर पर सपरिवार आपकी गरिमामयी उपस्थिति एवं स्नेहिल आशीर्वाद हेतु सादर निमंत्रण प्रेषित करते हैं"
+      },
+      awaitingLine: {
+        en: "Awaiting Your Gracious Presence: Siddharth Dave, Pooja Dave, Aarav Dave & All Members of the Dave Parivar",
+        hi: "दर्शनाभिलाषी: सिद्धार्थ दवे, पूजा दवे, आरव दवे एवं समस्त दवे परिवार"
+      },
+      complimentsLine: {
+        en: "With Best Compliments From: The Dave & Vyas Families, Friends & Relatives",
+        hi: "विनीत: समस्त दवे एवं व्यास परिवार तथा इष्टमित्र"
+      }
+    }
+  },
+
+  functions: [
+    {
+      id: "haldi-mehendi",
+      icon: "marigold",
+      title: {
+        en: "Haldi & Mehendi Carnival",
+        hi: "हल्दी एवं मेहंदी उत्सव"
+      },
+      subtitle: {
+        en: "Sun-kissed hues of turmeric, henna & coastal folk dhol",
+        hi: "हल्दी की आभा, मेहंदी की रचावट एवं लोक संगीत की मधुर बेला"
+      },
+      dayDate: {
+        en: "Monday, 21st February 2022",
+        hi: "सोमवार, २१ फरवरी २०२२"
+      },
+      time: {
+        en: "11:00 AM – 3:30 PM",
+        hi: "प्रातः ११:०० से दोपहर ३:३० बजे तक"
+      },
+      venue: {
+        en: "Poolside Tropical Lawns · Fairfield By Marriott Goa Benaulim",
+        hi: "पूलसाइड लॉन · फेयरफील्ड बाय मैरियट गोवा बेनौलिम"
+      },
+      address: {
+        en: "Vasvaddo, Benaulim, South Goa 403716",
+        hi: "वासवड्डो, बेनौलिम, दक्षिण गोवा ४०३७१६"
+      },
+      dressCode: {
+        en: "Dress Code: Marigold Yellow, Lime & Sunset Pastels",
+        hi: "परिधान: गेंदे का पीला एवं सौम्य पेस्टल रंग"
+      },
+      startISO: "20220221T110000",
+      endISO: "20220221T153000",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim"
+    },
+    {
+      id: "sangeet",
+      icon: "bells",
+      title: {
+        en: "Sangeet & Ring Ceremony",
+        hi: "संगीत संध्या एवं सगाई समारोह"
+      },
+      subtitle: {
+        en: "An evening of royal melodies, exchange of rings & family performances",
+        hi: "अंगूठी रस्म, सुरमयी संगीत एवं पारिवारिक नृत्य की यादगार संध्या"
+      },
+      dayDate: {
+        en: "Monday, 21st February 2022",
+        hi: "सोमवार, २१ फरवरी २०२२"
+      },
+      time: {
+        en: "7:30 PM Onwards",
+        hi: "सायं ७:३० बजे से"
+      },
+      venue: {
+        en: "The Grand Ballroom · Fairfield By Marriott Goa Benaulim",
+        hi: "द ग्रैंड बॉलरूम · फेयरफील्ड बाय मैरियट गोवा बेनौलिम"
+      },
+      address: {
+        en: "Vasvaddo, Benaulim, South Goa 403716",
+        hi: "वासवड्डो, बेनौलिम, दक्षिण गोवा ४०३७१६"
+      },
+      dressCode: {
+        en: "Dress Code: Royal Indo-Western & Antique Gold Shimmer",
+        hi: "परिधान: रॉयल इंडो-वेस्टर्न एवं सुनहरी आभा"
+      },
+      startISO: "20220221T193000",
+      endISO: "20220221T233000",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim"
+    },
+    {
+      id: "pheras",
+      icon: "kalash",
+      isMainCeremony: true,
+      title: {
+        en: "Baraat Swagat & Vedic Pheras (Shubh Muhurat)",
+        hi: "बारात स्वागत एवं पाणिग्रहण संस्कार (शुभ मुहूर्त)"
+      },
+      subtitle: {
+        en: "Sacred Vedic vows under the coastal sunset Jharokha Mandap · Followed by Dinner & Ashirwad",
+        hi: "वैदिक मंत्रोच्चार के मध्य सप्तपदी एवं पाणिग्रहण संस्कार · तत्पश्चात प्रीतिभोज एवं आशीर्वाद"
+      },
+      dayDate: {
+        en: "Tuesday, 22nd February 2022",
+        hi: "मंगलवार, २२ फरवरी २०२२"
+      },
+      time: {
+        en: "4:00 PM – 8:30 PM",
+        hi: "सायं ४:०० से रात्रि ८:३० बजे तक"
+      },
+      venue: {
+        en: "Royal Courtyard Mandap · Fairfield By Marriott Goa Benaulim",
+        hi: "रॉयल कोर्टयार्ड मंडप · फेयरफील्ड बाय मैरियट गोवा बेनौलिम"
+      },
+      address: {
+        en: "Vasvaddo, Benaulim, South Goa 403716",
+        hi: "वासवड्डो, बेनौलिम, दक्षिण गोवा ४०३७१६"
+      },
+      dressCode: {
+        en: "Dress Code: Traditional Royal Heritage (Sandstone, Ivory & Terracotta Rose)",
+        hi: "परिधान: पारंपरिक राजसी परिधान (आइवरी, सैंडस्टोन एवं टेराकोटा गुलाबी)"
+      },
+      subSchedule: [
+        {
+          time: { en: "4:00 PM", hi: "सायं ४:००" },
+          label: { en: "Sehra Bandi & Ghurchari", hi: "सेहरा बंदी एवं घुड़चढ़ी" }
+        },
+        {
+          time: { en: "4:30 PM", hi: "सायं ४:३०" },
+          label: { en: "Baraat Prasthan & Royal Swagat", hi: "बारात प्रस्थान एवं भव्य स्वागत" }
+        },
+        {
+          time: { en: "5:45 PM", hi: "सायं ५:४५" },
+          label: { en: "Sunset Varmala (Jaimala)", hi: "गोधूलि वरमाला (जयमाला)" }
+        },
+        {
+          time: { en: "6:30 PM", hi: "सायं ६:३०" },
+          label: { en: "Hastmelap & Shubh Muhurat Pheras", hi: "हस्तमेलाप एवं शुभ मुहूर्त फेरे" }
+        },
+        {
+          time: { en: "8:30 PM", hi: "रात्रि ८:३०" },
+          label: { en: "Taron Ki Chhaon Mein Vidai", hi: "तारों की छाँव में विदाई" }
+        }
+      ],
+      etiquetteNote: {
+        en: "Shubh Muhurat Note: Please grace the Courtyard Mandap 15 minutes prior to Sunset Varmala. Followed by Royal Dinner & Ashirwad.",
+        hi: "विशेष आग्रह: कृपया गोधूलि वरमाला से १५ मिनट पूर्व मंडप में पधारकर वर-वधू को आशीर्वाद प्रदान करें। तत्पश्चात प्रीतिभोज।"
+      },
+      startISO: "20220222T160000",
+      endISO: "20220222T203000",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim"
+    },
+    {
+      id: "reception",
+      icon: "diya",
+      title: {
+        en: "Ashirwad & Grand Reception Dinner",
+        hi: "आशीर्वाद समारोह एवं भव्य प्रीतिभोज"
+      },
+      subtitle: {
+        en: "Celebrating the newlyweds under the starlit palms of Benaulim",
+        hi: "नवदंपति के सम्मान में तारों भरी संध्या एवं स्वागत प्रीतिभोज"
+      },
+      dayDate: {
+        en: "Tuesday, 22nd February 2022",
+        hi: "मंगलवार, २२ फरवरी २०२२"
+      },
+      time: {
+        en: "8:00 PM Onwards",
+        hi: "रात्रि ८:०० बजे से"
+      },
+      venue: {
+        en: "Starlit Palm Lawns · Fairfield By Marriott Goa Benaulim",
+        hi: "पाम लॉन · फेयरफील्ड बाय मैरियट गोवा बेनौलिम"
+      },
+      address: {
+        en: "Vasvaddo, Benaulim, South Goa 403716",
+        hi: "वासवड्डो, बेनौलिम, दक्षिण गोवा ४०३७१६"
+      },
+      dressCode: {
+        en: "Dress Code: Regal Evening Finery",
+        hi: "परिधान: गरिमामय संध्या परिधान"
+      },
+      startISO: "20220222T200000",
+      endISO: "20220222T235900",
+      mapsUrl: "https://www.google.com/maps/search/?api=1&query=Fairfield+by+Marriott+Goa+Benaulim"
+    }
+  ],
+
+  // Gallery Photos matching each section title with high-res Indian wedding dummy images
+  gallery: [
+    {
+      id: 1,
+      imageSrc: "../gallery/gallery-1-couple.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1583939003579-730e3918a45a?auto=format&fit=crop&w=800&q=80",
+      title: { en: "Sumit & Nidhi · Pre-Wedding Portrait", hi: "सुमित एवं निधि · प्री-वेडिंग पोर्ट्रेट" },
+      caption: { en: "Golden Hour by the Benaulim Coast, South Goa", hi: "बेनौलिम तट पर सुनहरी संध्या, दक्षिण गोवा" },
+      tag: { en: "Couple Portrait", hi: "युगल छायाचित्र" }
+    },
+    {
+      id: 2,
+      imageSrc: "../gallery/gallery-2-mehendi.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=800&q=80",
+      title: { en: "Haldi & Intricate Henna Celebration", hi: "हल्दी एवं मेहंदी की मनमोहक रचावट" },
+      caption: { en: "Auspicious turmeric blessings & bridal mehendi", hi: "हल्दी के पावन संस्कार एवं सखियों का उल्लास" },
+      tag: { en: "Haldi & Mehendi", hi: "हल्दी व मेहंदी" }
+    },
+    {
+      id: 3,
+      imageSrc: "../gallery/gallery-3-mandap.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+      title: { en: "The Royal Jharokha Mandap", hi: "राजसी झरोखा विवाह मंडप" },
+      caption: { en: "Courtyard Mandap · Fairfield By Marriott Goa Benaulim", hi: "फेयरफील्ड बाय मैरियट गोवा बेनौलिम प्रांगण" },
+      tag: { en: "Mandap Decor", hi: "मंडप सज्जा" }
+    },
+    {
+      id: 4,
+      imageSrc: "../gallery/gallery-4-varmala.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=800&q=80",
+      title: { en: "Sunset Varmala & Sacred Vedic Pheras", hi: "गोधूलि वरमाला एवं पाणिग्रहण संस्कार" },
+      caption: { en: "Hastmelap & sacred vows under the sunset sky", hi: "सप्तपदी एवं वैदिक मंत्रोच्चार के पावन फेरे" },
+      tag: { en: "Shubh Pheras", hi: "शुभ फेरे" }
+    },
+    {
+      id: 5,
+      imageSrc: "../gallery/gallery-5-sangeet.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?auto=format&fit=crop&w=800&q=80",
+      title: { en: "Starlit Sangeet & Ring Ceremony", hi: "सुरमयी संगीत एवं सगाई संध्या" },
+      caption: { en: "Grand Ballroom · An evening of melodies & dance", hi: "द ग्रैंड बॉलरूम · नृत्य, संगीत एवं उल्लास" },
+      tag: { en: "Sangeet Night", hi: "संगीत संध्या" }
+    },
+    {
+      id: 6,
+      imageSrc: "../gallery/gallery-6-reception.jpg",
+      imageFallback: "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=800&q=80",
+      title: { en: "Grand Ashirwad Reception Gala", hi: "भव्य आशीर्वाद समारोह एवं प्रीतिभोज" },
+      caption: { en: "Celebrating #SumitKiNidhi under the starlit palms", hi: "तारों भरी संध्या में नवदंपति का स्नेहिल स्वागत" },
+      tag: { en: "Grand Reception", hi: "प्रीतिभोज" }
+    }
+  ],
+
+  rsvpContacts: [
+    {
+      name: { en: "Shri Rajeshwar Vyas (Groom's Father)", hi: "श्री राजेश्वर व्यास (वर पक्ष)" },
+      phone: "+91 111 222 3333",
+      phoneClean: "911112223333"
+    },
+    {
+      name: { en: "Shri Devendra Dave (Bride's Father)", hi: "श्री देवेन्द्र दवे (वधू पक्ष)" },
+      phone: "+91 444 555 6666",
+      phoneClean: "914445556666"
+    },
+    {
+      name: { en: "Wedding Hospitality Desk · Fairfield Benaulim", hi: "विवाह अतिथि सत्कार डेस्क · फेयरफील्ड बेनौलिम" },
+      phone: "+91 777 888 9999",
+      phoneClean: "917778889999"
+    }
+  ]
+};
+
+</script>
+<script>
+/**
+ * INTERNATIONALIZATION (i18n) — ENGLISH & HINDI (देवनागरी)
+ * Complete interface strings for the Royal North Indian / Rajasthani Hindu Wedding Invitation.
+ */
+window.WEDDING_I18N = {
+  en: {
+    langCode: "en",
+    langToggleLabel: "हिंदी",
+    langToggleAria: "Switch language to Hindi",
+    sacredHeader: "॥ ॐ श्री गणेशाय नमः ॥",
+    gateSubtitle: "Shubh Vivah Invitation",
+    gateTapHint: "Tap the royal seal to open palace gates & play music",
+    openInvitationBtn: "Open Invitation",
+    sideBadgeGroom: "Groom's Family Invite (Vyas Parivar)",
+    sideBadgeBride: "Bride's Family Invite (Dave Parivar)",
+    switchSideToBride: "Switch to Bride Side (#bride)",
+    switchSideToGroom: "Switch to Groom Side",
+    audioPlay: "Play Music",
+    audioPause: "Pause Music",
+
+    // Section 1: Hero
+    heroEyebrow: "Shubh Vivah · Royal Wedding Celebration",
+    heroUnionWord: "weds",
+    heroScrollHint: "Scroll to unfold the royal invitation",
+
+    // Section 2: Blessings
+    blessingsEyebrow: "Divine Invocation & Blessings",
+    blessingsTitle: "Shree Ganeshaya Namah",
+    shlokaSanskrit: "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+    shlokaMeaning: "O Lord Ganesha, of curved trunk, immense form, and the brilliance of a million suns—bless this sacred union and remove all obstacles from every endeavour, forevermore.",
+    familyBlessingText: "With the divine grace of Lord Ganesha, Kuldevi-Kuldevta, and the eternal blessings of our revered grandparents, two hearts and two families unite in sacred Vedic matrimony by the serene shores of Benaulim, Goa.",
+
+    // Section 3: Formal Invitation Card
+    invitationEyebrow: "Formal Wedding Stationery",
+    invitationTitle: "Cordial Invitation",
+    withUnionWord: "&",
+    sonOfLabel: "Beloved Son of",
+    daughterOfLabel: "Beloved Daughter of",
+    ceremonyVenueLabel: "Venue of Celebrations",
+    dateOfMarriageLabel: "Auspicious Date of Shubh Vivah",
+
+    // Section 4: Countdown
+    countdownEyebrow: "Auspicious Moment",
+    countdownTitle: "Shubh Muhurat Countdown",
+    countdownSubtitleLive: "Counting down to the sacred Sunset Varmala & Vedic Pheras",
+    countdownSubtitleMarried: "Celebrated on the auspicious palindrome date · 22 · 02 · 2022",
+    days: "Days",
+    hours: "Hours",
+    minutes: "Minutes",
+    seconds: "Seconds",
+    happeningNow: "The Sacred Shubh Vivah Ceremony is Happening Now!",
+    marriedSinceBadge: "Happily Married Since 22 February 2022 · Time Together",
+    toggleCountdownPreview: "Switch to Married-Since Counter (22 Feb 2022)",
+    toggleCountdownFuture: "Preview Live Countdown Timer",
+
+    // Section 5: Functions
+    functionsEyebrow: "Royal Wedding Itinerary",
+    functionsTitle: "Mangal Karya & Celebrations",
+    functionsSubtitle: "Every ceremony will be hosted at Fairfield By Marriott Goa Benaulim",
+    subScheduleHeading: "Shubh Vivah Ceremonial Timings",
+    getDirectionsBtn: "Get Directions",
+    addGoogleCalBtn: "Google Calendar",
+    downloadIcsBtn: "Download .ics",
+    watchFilmBtn: "Watch the Invitation Film",
+
+    // Section 6: Gallery
+    galleryEyebrow: "Royal Moments & Architecture",
+    galleryTitle: "Jharokha Gallery",
+    gallerySubtitle: "Tap any royal frame to open in full-screen lightbox view (Swipe or use Arrow keys)",
+    galleryPlaceholderTag: "Royal Portrait Frame",
+
+    // Section 7: Closing
+    closingEyebrow: "With Warmest Regards",
+    closingTitle: "Your Presence is Our Greatest Blessing",
+    closingMessage: "No distance diminishes the warmth of your blessings. We eagerly await welcoming you with folded hands to the sunlit palms and royal courtyards of Fairfield By Marriott Goa Benaulim as Sumit & Nidhi embark on their sacred journey together.",
+    shareBtn: "Share Invite",
+    whatsappBtn: "WhatsApp",
+    copyLinkBtn: "Copy Link",
+    savePdfBtn: "Save as PDF",
+    backToTopBtn: "Back to Top",
+    rsvpHeading: "R.S.V.P. & Hospitality Contacts",
+    callBtn: "Call",
+    whatsappContactBtn: "Message",
+
+    // Modals & Toasts
+    filmModalTitle: "Sumit & Nidhi — Royal Save the Date Film",
+    filmModalClose: "Close Film",
+    lightboxClose: "Close",
+    lightboxPrev: "Previous frame",
+    lightboxNext: "Next frame",
+    toastCopied: "Invitation link copied to clipboard! ✓",
+    toastSideSwitchedBride: "Switched to Bride's Family (#bride) Invitation ✓",
+    toastSideSwitchedGroom: "Switched to Groom's Family Invitation ✓",
+    toastIcsDownloaded: "Calendar event (.ics) downloaded! ✓"
+  },
+
+  hi: {
+    langCode: "hi",
+    langToggleLabel: "English",
+    langToggleAria: "भाषा को अंग्रेजी में बदलें",
+    sacredHeader: "॥ ॐ श्री गणेशाय नमः ॥",
+    gateSubtitle: "शुभ विवाह स्नेहिल आमंत्रण",
+    gateTapHint: "शाही द्वार खोलने एवं मधुर संगीत सुनने के लिए मोहर पर स्पर्श करें",
+    openInvitationBtn: "निमंत्रण खोलें",
+    sideBadgeGroom: "वर पक्ष निमंत्रण (व्यास परिवार)",
+    sideBadgeBride: "वधू पक्ष निमंत्रण (दवे परिवार)",
+    switchSideToBride: "वधू पक्ष निमंत्रण देखें (#bride)",
+    switchSideToGroom: "वर पक्ष निमंत्रण देखें",
+    audioPlay: "संगीत चलाएं",
+    audioPause: "संगीत रोकें",
+
+    // Section 1: Hero
+    heroEyebrow: "शुभ विवाह · मंगल परिणय उत्सव",
+    heroUnionWord: "संग",
+    heroScrollHint: "शाही निमंत्रण पत्र देखने के लिए नीचे स्क्रॉल करें",
+
+    // Section 2: Blessings
+    blessingsEyebrow: "मंगलमयी वंदना एवं आशीर्वाद",
+    blessingsTitle: "श्री गणेशाय नमः",
+    shlokaSanskrit: "वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ।\nनिर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥",
+    shlokaMeaning: "घुमावदार सूंड वाले, विशाल काया वाले, करोड़ों सूर्यों के समान तेजस्वी भगवान श्री गणेश—हमारे इस पावन वैवाहिक कार्य को सदैव निर्विघ्न संपन्न करें।",
+    familyBlessingText: "विघ्नहर्ता भगवान श्री गणेश, कुलदेवी-कुलदेवता की असीम कृपा एवं हमारे पूजनीय पूर्वजों के पावन आशीर्वाद से, बेनौलिम (गोवा) के सुरम्य तट पर दो हृदयों एवं दो परिवारों का यह पवित्र वैदिक मिलन संपन्न होने जा रहा है।",
+
+    // Section 3: Formal Invitation Card
+    invitationEyebrow: "मंगल निमंत्रण पत्र",
+    invitationTitle: "स्नेहिल आमंत्रण",
+    withUnionWord: "संग",
+    sonOfLabel: "सुपुत्र",
+    daughterOfLabel: "सुपुत्री",
+    ceremonyVenueLabel: "विवाह स्थल",
+    dateOfMarriageLabel: "शुभ विवाह दिनांक",
+
+    // Section 4: Countdown
+    countdownEyebrow: "पावन घड़ी",
+    countdownTitle: "शुभ मुहूर्त गणना",
+    countdownSubtitleLive: "गोधूलि वरमाला एवं पाणिग्रहण संस्कार की शुभ घड़ी",
+    countdownSubtitleMarried: "पावन तिथि २२ · ०२ · २०२२ को संपन्न शुभ विवाह",
+    days: "दिन",
+    hours: "घंटे",
+    minutes: "मिनट",
+    seconds: "सेकंड",
+    happeningNow: "शुभ विवाह संस्कार अभी संपन्न हो रहा है!",
+    marriedSinceBadge: "२२ फरवरी २०२२ से सुखद दाम्पत्य जीवन · साथ बिताया समय",
+    toggleCountdownPreview: "विवाह पश्चात समय गणना देखें (२२ फरवरी २०२२)",
+    toggleCountdownFuture: "लाइव काउंटडाउन प्रीव्यू देखें",
+
+    // Section 5: Functions
+    functionsEyebrow: "मांगलिक कार्यक्रम विवरण",
+    functionsTitle: "मंगल कार्य एवं उत्सव",
+    functionsSubtitle: "सभी मांगलिक कार्यक्रम फेयरफील्ड बाय मैरियट गोवा बेनौलिम में संपन्न होंगे",
+    subScheduleHeading: "शुभ विवाह की विस्तृत समय-सारणी",
+    getDirectionsBtn: "दिशा-निर्देश (मैप्स)",
+    addGoogleCalBtn: "गूगल कैलेंडर",
+    downloadIcsBtn: ".ics डाउनलोड",
+    watchFilmBtn: "आमंत्रण फिल्म देखें",
+
+    // Section 6: Gallery
+    galleryEyebrow: "राजसी झलकियाँ एवं स्थापत्य",
+    galleryTitle: "झरोखा चित्र वीथिका",
+    gallerySubtitle: "किसी भी चित्र को पूर्ण स्क्रीन में देखने के लिए स्पर्श करें",
+    galleryPlaceholderTag: "राजसी झरोखा फ्रेम",
+
+    // Section 7: Closing
+    closingEyebrow: "स्नेहिल आभार",
+    closingTitle: "आपकी उपस्थिति ही हमारा सबसे बड़ा आशीर्वाद है",
+    closingMessage: "सुमित एवं निधि के नवजीवन के इस पावन शुभारंभ पर फेयरफील्ड बाय मैरियट गोवा बेनौलिम के राजसी प्रांगण में हम करबद्ध होकर आपके आगमन की प्रतीक्षा कर रहे हैं।",
+    shareBtn: "साझा करें",
+    whatsappBtn: "व्हाट्सएप",
+    copyLinkBtn: "लिंक कॉपी करें",
+    savePdfBtn: "PDF सहेजें",
+    backToTopBtn: "ऊपर जाएं",
+    rsvpHeading: "स्वागतातुर एवं संपर्क सूत्र (R.S.V.P.)",
+    callBtn: "कॉल करें",
+    whatsappContactBtn: "संदेश",
+
+    // Modals & Toasts
+    filmModalTitle: "सुमित एवं निधि — शाही विवाह आमंत्रण फिल्म",
+    filmModalClose: "बंद करें",
+    lightboxClose: "बंद करें",
+    lightboxPrev: "पिछला चित्र",
+    lightboxNext: "अगला चित्र",
+    toastCopied: "निमंत्रण लिंक कॉपी हो गया! ✓",
+    toastSideSwitchedBride: "वधू पक्ष (#bride) निमंत्रण सक्रिय किया गया ✓",
+    toastSideSwitchedGroom: "वर पक्ष निमंत्रण सक्रिय किया गया ✓",
+    toastIcsDownloaded: "कैलेंडर इवेंट (.ics) डाउनलोड हो गया! ✓"
+  }
+};
+
+</script>
+<script>
+/**
+ * ============================================================================
+ * SUMIT VYAS & NIDHI DAVE — ROYAL WEDDING INVITATION APPLICATION (app.js)
+ * - 3D Royal Crimson & Gold Kalash/Paisley Double Doors + Pearl Wax Seal
+ * - 3-Layer Ganesha Idol Courtyard Walk-Through Zoom Parallax (Door Open + Scroll + Tilt)
+ * - Marigold & Red Rose Falling Petals + 50% Volume Background Audio
+ * - Interactive Gold Foil Scratch-to-Reveal Date Card + 4-Box Countdown
+ * - Clean Flat-DOM Mobile Layout (Zero Zoom Bug, Native Smooth Touch Scrolling)
+ * ============================================================================
+ */
+(function () {
+  "use strict";
+
+  const CFG = window.WEDDING_CONFIG || {};
+  const I18N = window.WEDDING_I18N || {};
+
+  const state = {
+    lang: "en",
+    side: window.location.hash.toLowerCase().includes("bride") ? "bride" : "groom",
+    doorsOpened: false,
+    doorStyle: "royal", // 'royal' (Crimson & Gold Kalash) or 'villa'
+    audioPlaying: false,
+    userPausedAudio: false,
+    scratchRevealed: false,
+    lightboxIndex: 0
+  };
+
+  // DOM Elements
+  const courtyardHero = document.getElementById("courtyardHero");
+  const courtyardParallaxScene = document.getElementById("courtyardParallaxScene");
+  const gateWaxSeal = document.getElementById("gateWaxSeal");
+  const openInvitationBtn = document.getElementById("openInvitationBtn");
+  const doors3DStage = document.getElementById("doors3DStage");
+  const exploreInviteBtn = document.getElementById("exploreInviteBtn");
+  const replayDoorBtn = document.getElementById("replayDoorBtn");
+  const coupleScratchSection = document.getElementById("coupleScratchSection");
+
+  /* ==========================================================================
+     1. TOAST HELPER
+     ========================================================================== */
+  let toastTimer = null;
+  function showToast(msg) {
+    const toast = document.getElementById("toast");
+    if (!toast) return;
+    toast.textContent = msg;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2800);
+  }
+
+  /* ==========================================================================
+     2. BACKGROUND MUSIC CONTROLLER (Starts at 50% Volume on Door Tap)
+     ========================================================================== */
+  const audioEl = new Audio();
+  audioEl.src = (CFG.assets && CFG.assets.audioSrc) || "song.mp3";
+  audioEl.loop = true;
+  audioEl.preload = "auto";
+  audioEl.volume = (CFG.assets && typeof CFG.assets.audioVolume === "number") ? CFG.assets.audioVolume : 0.5;
+
+  const audioToggleBtn = document.getElementById("audioToggleBtn");
+  const audioToggleLabel = document.getElementById("audioToggleLabel");
+
+  function updateAudioUI() {
+    if (!audioToggleBtn) return;
+    audioToggleBtn.classList.toggle("playing", state.audioPlaying);
+    audioToggleBtn.setAttribute("aria-pressed", state.audioPlaying ? "true" : "false");
+    if (audioToggleLabel) {
+      audioToggleLabel.textContent = state.audioPlaying
+        ? (state.lang === "hi" ? "संगीत चालू" : "Music On")
+        : (state.lang === "hi" ? "संगीत" : "Music");
+    }
+  }
+
+  function startWeddingMusic() {
+    audioEl.volume = 0.5;
+    const playPromise = audioEl.play();
+    if (playPromise && typeof playPromise.then === "function") {
+      playPromise
+        .then(() => {
+          state.audioPlaying = true;
+          state.userPausedAudio = false;
+          updateAudioUI();
+        })
+        .catch(() => {
+          state.audioPlaying = false;
+          updateAudioUI();
+        });
+    }
+  }
+
+  function pauseWeddingMusic() {
+    audioEl.pause();
+    state.audioPlaying = false;
+    updateAudioUI();
+  }
+
+  if (audioToggleBtn) {
+    audioToggleBtn.addEventListener("click", () => {
+      if (state.audioPlaying) {
+        state.userPausedAudio = true;
+        pauseWeddingMusic();
+      } else {
+        state.userPausedAudio = false;
+        startWeddingMusic();
+      }
+    });
+  }
+
+  // Pause music automatically when tab is hidden; resume when visible if not paused by user
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      if (state.audioPlaying) {
+        audioEl.pause();
+      }
+    } else if (state.doorsOpened && !state.userPausedAudio && state.audioPlaying) {
+      audioEl.play().catch(() => {});
+    }
+  });
+
+  /* ==========================================================================
+     3. MARIGOLD & RED ROSE FALLING PETALS ENGINE
+     ========================================================================== */
+  const petalCanvas = document.getElementById("petalCanvas");
+  const pCtx = petalCanvas ? petalCanvas.getContext("2d") : null;
+  const petals = [];
+  const PETAL_COLORS = [
+    "#F59E0B", // Marigold Saffron
+    "#FBBF24", // Golden Marigold
+    "#D97706", // Deep Orange Marigold
+    "#991B1B", // Crimson Rose
+    "#B91C1C", // Sindoor Red Rose
+    "#E11D48"  // Gulabi Rose
+  ];
+
+  function resizePetalCanvas() {
+    if (!petalCanvas) return;
+    petalCanvas.width = window.innerWidth;
+    petalCanvas.height = window.innerHeight;
+  }
+
+  function createPetal(burstMode) {
+    const w = petalCanvas ? petalCanvas.width : window.innerWidth;
+    const h = petalCanvas ? petalCanvas.height : window.innerHeight;
+    return {
+      x: burstMode ? (w * 0.2 + Math.random() * w * 0.6) : Math.random() * w,
+      y: burstMode ? (-20 - Math.random() * 140) : Math.random() * h,
+      r: 5 + Math.random() * 7,
+      vy: (burstMode ? 1.8 : 0.85) + Math.random() * 1.6,
+      vx: -0.9 + Math.random() * 1.8,
+      rot: Math.random() * Math.PI * 2,
+      vRot: -0.03 + Math.random() * 0.06,
+      swayPhase: Math.random() * Math.PI * 2,
+      color: PETAL_COLORS[Math.floor(Math.random() * PETAL_COLORS.length)],
+      alpha: 0.75 + Math.random() * 0.25
+    };
+  }
+
+  function initPetals() {
+    if (!petalCanvas || !pCtx) return;
+    resizePetalCanvas();
+    window.addEventListener("resize", resizePetalCanvas, { passive: true });
+    const initialCount = window.innerWidth < 600 ? 18 : 28;
+    for (let i = 0; i < initialCount; i++) {
+      petals.push(createPetal(false));
+    }
+    requestAnimationFrame(animatePetals);
+  }
+
+  function triggerPetalBurst(extraCount) {
+    const maxAllowed = window.innerWidth < 600 ? 52 : 80;
+    for (let i = 0; i < extraCount && petals.length < maxAllowed; i++) {
+      petals.push(createPetal(true));
+    }
+  }
+
+  function animatePetals() {
+    if (!pCtx || !petalCanvas) return;
+    pCtx.clearRect(0, 0, petalCanvas.width, petalCanvas.height);
+    for (let i = 0; i < petals.length; i++) {
+      const p = petals[i];
+      p.swayPhase += 0.022;
+      p.x += p.vx + Math.sin(p.swayPhase) * 0.45;
+      p.y += p.vy;
+      p.rot += p.vRot;
+
+      if (p.y > petalCanvas.height + 24) {
+        p.y = -18;
+        p.x = Math.random() * petalCanvas.width;
+      }
+      if (p.x < -24) p.x = petalCanvas.width + 18;
+      if (p.x > petalCanvas.width + 24) p.x = -18;
+
+      pCtx.save();
+      pCtx.translate(p.x, p.y);
+      pCtx.rotate(p.rot);
+      pCtx.globalAlpha = p.alpha;
+      pCtx.fillStyle = p.color;
+      pCtx.beginPath();
+      pCtx.ellipse(0, 0, p.r, p.r * 0.62, 0, 0, Math.PI * 2);
+      pCtx.fill();
+      pCtx.restore();
+    }
+    requestAnimationFrame(animatePetals);
+  }
+
+  /* ==========================================================================
+     4. 3D ROYAL DOORS & MULTI-LAYER GANESHA COURTYARD WALK-THROUGH PARALLAX
+     ========================================================================== */
+  function openCourtyardDoors() {
+    if (state.doorsOpened) return;
+    state.doorsOpened = true;
+
+    // 1. Unlock native document scroll immediately so mobile touch scroll is 100% smooth
+    document.body.classList.remove("gate-locked");
+
+    // 2. Swing doors open in 3D, trigger golden light burst & multi-layer courtyard walk-through zoom
+    if (courtyardHero) {
+      courtyardHero.classList.add("doors-open", "burst-active");
+    }
+
+    // 3. Burst marigold + red rose petals
+    triggerPetalBurst(28);
+
+    // 4. Start background music at 50% volume
+    startWeddingMusic();
+
+    // 5. Redraw scratch card canvas so it is crisp when user scrolls down
+    setTimeout(() => {
+      initScratchCard();
+    }, 350);
+  }
+
+  function replayCourtyardDoors() {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    if (!courtyardHero) return;
+
+    courtyardHero.classList.remove("doors-open", "burst-active", "scrolling-active");
+    if (courtyardParallaxScene) {
+      courtyardParallaxScene.style.setProperty("--scroll-progress", "0");
+    }
+    state.doorsOpened = false;
+
+    setTimeout(() => {
+      openCourtyardDoors();
+    }, 900);
+  }
+
+  // Bind Door Open Triggers (Button, Wax Seal, and 3D Door Leaves)
+  if (openInvitationBtn) {
+    openInvitationBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openCourtyardDoors();
+    });
+  }
+
+  if (gateWaxSeal) {
+    gateWaxSeal.addEventListener("click", (e) => {
+      e.stopPropagation();
+      openCourtyardDoors();
+    });
+    gateWaxSeal.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        openCourtyardDoors();
+      }
+    });
+  }
+
+  if (doors3DStage) {
+    doors3DStage.addEventListener("click", () => {
+      if (!state.doorsOpened) {
+        openCourtyardDoors();
+      }
+    });
+  }
+
+  // "Explore Invitation" button inside the Ganesha Courtyard bottom plaque
+  if (exploreInviteBtn && coupleScratchSection) {
+    exploreInviteBtn.addEventListener("click", () => {
+      coupleScratchSection.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
+  }
+
+  // "Replay Door Opening" button
+  if (replayDoorBtn) {
+    replayDoorBtn.addEventListener("click", replayCourtyardDoors);
+  }
+
+  // Door Style Toggle Button in Topbar
+  const doorStyleBtn = document.getElementById("doorStyleBtn");
+  if (doorStyleBtn) {
+    doorStyleBtn.addEventListener("click", () => {
+      state.doorStyle = state.doorStyle === "royal" ? "villa" : "royal";
+      document.body.classList.toggle("door-style-villa", state.doorStyle === "villa");
+      showToast(
+        state.doorStyle === "royal"
+          ? "Royal Sindoor & Gold Kalash Doors Active"
+          : "Royal Heritage Teak Finish Active"
+      );
+    });
+  }
+
+  /* ==========================================================================
+     5. SCROLL-DRIVEN & INTERACTIVE TILT PARALLAX ON GANESHA COURTYARD
+     Simulates walking deeper through the doorway arch as the user scrolls down
+     ========================================================================== */
+  let scrollTicking = false;
+  let scrollIdleTimeout = null;
+
+  function updateCourtyardScrollParallax() {
+    scrollTicking = false;
+    if (!courtyardHero || !courtyardParallaxScene) return;
+
+    const scrollY = window.scrollY || window.pageYOffset || 0;
+    const heroH = courtyardHero.offsetHeight || window.innerHeight;
+
+    if (scrollY <= heroH * 1.15) {
+      const progress = Math.max(0, Math.min(1, scrollY / (heroH * 0.85)));
+      courtyardHero.classList.add("scrolling-active");
+      courtyardParallaxScene.style.setProperty("--scroll-progress", progress.toFixed(3));
+
+      clearTimeout(scrollIdleTimeout);
+      scrollIdleTimeout = setTimeout(() => {
+        courtyardHero.classList.remove("scrolling-active");
+      }, 140);
+    }
+
+    // Update timeline fill progress
+    updateTimelineProgress();
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!scrollTicking) {
+        requestAnimationFrame(updateCourtyardScrollParallax);
+        scrollTicking = true;
+      }
+    },
+    { passive: true }
+  );
+
+  // Subtle pointer/touch parallax tilt inside the Ganesha Courtyard
+  if (courtyardHero && courtyardParallaxScene) {
+    courtyardHero.addEventListener(
+      "pointermove",
+      (e) => {
+        if (!state.doorsOpened) return;
+        const rect = courtyardHero.getBoundingClientRect();
+        const nx = (e.clientX - rect.left) / rect.width - 0.5;
+        const ny = (e.clientY - rect.top) / rect.height - 0.5;
+        courtyardParallaxScene.style.setProperty("--tilt-x", `${(nx * -14).toFixed(1)}px`);
+        courtyardParallaxScene.style.setProperty("--tilt-y", `${(ny * -10).toFixed(1)}px`);
+      },
+      { passive: true }
+    );
+  }
+
+  /* ==========================================================================
+     6. INTERACTIVE GOLD FOIL SCRATCH-TO-REVEAL DATE CARD
+     ========================================================================== */
+  const scratchCanvas = document.getElementById("scratchCanvas");
+  const quickRevealBtn = document.getElementById("quickRevealBtn");
+  let isScratching = false;
+
+  function initScratchCard() {
+    if (!scratchCanvas || state.scratchRevealed) return;
+    const ctx = scratchCanvas.getContext("2d");
+    if (!ctx) return;
+
+    const w = scratchCanvas.width;
+    const h = scratchCanvas.height;
+
+    ctx.globalCompositeOperation = "source-over";
+    ctx.clearRect(0, 0, w, h);
+
+    // Rich Metallic Gold Foil Gradient
+    const grad = ctx.createLinearGradient(0, 0, w, h);
+    grad.addColorStop(0, "#E6C465");
+    grad.addColorStop(0.28, "#FFF2BA");
+    grad.addColorStop(0.55, "#CFA33A");
+    grad.addColorStop(0.8, "#F8E49B");
+    grad.addColorStop(1, "#B38422");
+    ctx.fillStyle = grad;
+    ctx.fillRect(0, 0, w, h);
+
+    // Subtle metallic shimmer lines
+    ctx.strokeStyle = "rgba(255, 255, 255, 0.35)";
+    ctx.lineWidth = 1;
+    for (let x = -h; x < w + h; x += 16) {
+      ctx.beginPath();
+      ctx.moveTo(x, 0);
+      ctx.lineTo(x + h, h);
+      ctx.stroke();
+    }
+
+    // Inner ornamental border
+    ctx.strokeStyle = "rgba(92, 52, 12, 0.45)";
+    ctx.lineWidth = 1.5;
+    ctx.strokeRect(8, 8, w - 16, h - 16);
+
+    // Prompt text on foil
+    ctx.fillStyle = "#471D0A";
+    ctx.font = "700 15px 'Cormorant Garamond', Georgia, serif";
+    ctx.textAlign = "center";
+    ctx.textBaseline = "middle";
+    const promptTitle =
+      state.lang === "hi"
+        ? "✦ शुभ विवाह तिथि जानने हेतु स्क्रैच करें ✦"
+        : "✦ SCRATCH TO REVEAL WEDDING DATE ✦";
+    ctx.fillText(promptTitle, w / 2, h / 2 - 9);
+
+    ctx.font = "500 11px 'Jost', sans-serif";
+    ctx.fillStyle = "#683518";
+    const promptSub =
+      state.lang === "hi"
+        ? "उंगली या माउस से सुनहरी परत हटाएं"
+        : "Rub gently with your finger or mouse";
+    ctx.fillText(promptSub, w / 2, h / 2 + 13);
+  }
+
+  function scratchAtPoint(clientX, clientY) {
+    if (!scratchCanvas || state.scratchRevealed) return;
+    const rect = scratchCanvas.getBoundingClientRect();
+    const scaleX = scratchCanvas.width / rect.width;
+    const scaleY = scratchCanvas.height / rect.height;
+    const x = (clientX - rect.left) * scaleX;
+    const y = (clientY - rect.top) * scaleY;
+
+    const ctx = scratchCanvas.getContext("2d");
+    if (!ctx) return;
+
+    ctx.globalCompositeOperation = "destination-out";
+    ctx.beginPath();
+    ctx.arc(x, y, 22, 0, Math.PI * 2);
+    ctx.fill();
+
+    checkScratchCompletion();
+  }
+
+  function checkScratchCompletion() {
+    if (!scratchCanvas || state.scratchRevealed) return;
+    const ctx = scratchCanvas.getContext("2d");
+    if (!ctx) return;
+
+    const imgData = ctx.getImageData(0, 0, scratchCanvas.width, scratchCanvas.height).data;
+    let transparentPixels = 0;
+    const totalSampled = imgData.length / 16;
+
+    for (let i = 3; i < imgData.length; i += 16) {
+      if (imgData[i] < 128) transparentPixels++;
+    }
+
+    if (transparentPixels / totalSampled > 0.4) {
+      revealScratchCardCompletely();
+    }
+  }
+
+  function revealScratchCardCompletely() {
+    if (!scratchCanvas || state.scratchRevealed) return;
+    state.scratchRevealed = true;
+    scratchCanvas.classList.add("revealed");
+    triggerPetalBurst(18);
+    showToast(
+      state.lang === "hi"
+        ? "शुभ विवाह: मंगलवार, २२ फरवरी २०२२ ✨"
+        : "Shubh Vivah: Tuesday, 22nd February 2022 ✨"
+    );
+  }
+
+  if (scratchCanvas) {
+    scratchCanvas.addEventListener("pointerdown", (e) => {
+      isScratching = true;
+      scratchAtPoint(e.clientX, e.clientY);
+    });
+    window.addEventListener("pointermove", (e) => {
+      if (isScratching) {
+        scratchAtPoint(e.clientX, e.clientY);
+      }
+    });
+    window.addEventListener("pointerup", () => {
+      isScratching = false;
+    });
+  }
+
+  if (quickRevealBtn) {
+    quickRevealBtn.addEventListener("click", revealScratchCardCompletely);
+  }
+
+  /* ==========================================================================
+     7. LIVE 4-BOX COUNTDOWN TIMER
+     ========================================================================== */
+  function updateCountdown() {
+    const targetISO =
+      (CFG.wedding && CFG.wedding.previewFutureISO) || "2027-02-22T18:30:00+05:30";
+    const targetTime = new Date(targetISO).getTime();
+    const now = Date.now();
+    const diff = Math.max(0, targetTime - now);
+
+    const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    const mins = Math.floor((diff / (1000 * 60)) % 60);
+    const secs = Math.floor((diff / 1000) % 60);
+
+    const elDays = document.getElementById("scDays");
+    const elHours = document.getElementById("scHours");
+    const elMins = document.getElementById("scMins");
+    const elSecs = document.getElementById("scSecs");
+
+    if (elDays) elDays.textContent = String(days).padStart(2, "0");
+    if (elHours) elHours.textContent = String(hours).padStart(2, "0");
+    if (elMins) elMins.textContent = String(mins).padStart(2, "0");
+    if (elSecs) elSecs.textContent = String(secs).padStart(2, "0");
+  }
+
+  /* ==========================================================================
+     8. RENDER FORMAL CARD, FUNCTIONS TIMELINE, INDIAN GALLERY & RSVP
+     ========================================================================== */
+  function pickText(obj) {
+    if (!obj) return "";
+    if (typeof obj === "string") return obj;
+    return obj[state.lang] || obj.en || "";
+  }
+
+  function renderFormalStationeryCard() {
+    if (!CFG.couple || !CFG.invitationCard) return;
+    const isBrideSide = state.side === "bride";
+    const hostData = isBrideSide
+      ? CFG.invitationCard.brideSideHost
+      : CFG.invitationCard.groomSideHost;
+
+    const firstPerson = isBrideSide ? CFG.couple.bride : CFG.couple.groom;
+    const secondPerson = isBrideSide ? CFG.couple.groom : CFG.couple.bride;
+
+    // Update topbar & wax seal initials
+    const brandTitle = document.getElementById("brandTitle");
+    if (brandTitle) {
+      brandTitle.textContent = isBrideSide ? "NIDHI & SUMIT" : "SUMIT & NIDHI";
+    }
+    const sealChar1 = document.getElementById("sealChar1");
+    const sealChar2 = document.getElementById("sealChar2");
+    if (sealChar1) sealChar1.textContent = isBrideSide ? "N" : "S";
+    if (sealChar2) sealChar2.textContent = isBrideSide ? "S" : "N";
+
+    // Update Section 2 Couple Names
+    const inviteCoupleNames = document.getElementById("inviteCoupleNames");
+    if (inviteCoupleNames) {
+      const n1 = pickText(firstPerson.firstName).toUpperCase();
+      const n2 = pickText(secondPerson.firstName).toUpperCase();
+      inviteCoupleNames.innerHTML = `<span>${n1}</span><span class="invite-amp">&amp;</span><span>${n2}</span>`;
+    }
+
+    // Update Section 3 Formal Card
+    const setTxt = (id, val) => {
+      const el = document.getElementById(id);
+      if (el) el.textContent = val;
+    };
+
+    setTxt("cardEldersLine", pickText(hostData.blessingsLine));
+    setTxt("cardHostsLine", pickText(hostData.hostsLine));
+    setTxt("cardInviteBody", pickText(hostData.inviteText));
+    setTxt("cardPerson1Name", pickText(firstPerson.fullName));
+    setTxt("cardPerson1Lineage", pickText(firstPerson.parents));
+    setTxt("cardPerson2Name", pickText(secondPerson.fullName));
+    setTxt("cardPerson2Lineage", pickText(secondPerson.parents));
+    setTxt("cardDateHighlight", pickText(CFG.wedding.dateDisplay));
+    setTxt("cardVenueHighlight", pickText(CFG.wedding.venueName));
+    setTxt("cardAddressHighlight", pickText(CFG.wedding.venueAddress));
+    setTxt("cardAwaitingLine", pickText(hostData.awaitingLine));
+    setTxt("cardComplimentsLine", pickText(hostData.complimentsLine));
+  }
+
+  function renderFunctionsTimeline() {
+    const listEl = document.getElementById("functionsList");
+    if (!listEl || !Array.isArray(CFG.functions)) return;
+
+    listEl.innerHTML = CFG.functions
+      .map((fn) => {
+        const subItems = Array.isArray(fn.subSchedule)
+          ? `<div style="margin:8px 0 10px;display:flex;flex-wrap:wrap;gap:6px;">
+              ${fn.subSchedule
+                .map(
+                  (s) =>
+                    `<span class="fn-badge"><strong>${pickText(s.time)}</strong> · ${pickText(s.label)}</span>`
+                )
+                .join("")}
+            </div>`
+          : "";
+
+        return `
+          <article class="fn-card reveal visible">
+            <div class="fn-top">
+              <h3 class="fn-title">${pickText(fn.title)}</h3>
+              <span class="fn-when">${pickText(fn.dayDate)} · ${pickText(fn.time)}</span>
+            </div>
+            <div class="fn-venue">📍 ${pickText(fn.venue)}</div>
+            <p class="fn-note">${pickText(fn.subtitle)}</p>
+            ${subItems}
+            <div class="fn-meta">
+              <span class="fn-badge">✨ ${pickText(fn.dressCode)}</span>
+            </div>
+          </article>
+        `;
+      })
+      .join("");
+  }
+
+  function updateTimelineProgress() {
+    const container = document.getElementById("timelineContainer");
+    const fill = document.getElementById("timelineFill");
+    if (!container || !fill) return;
+    const rect = container.getBoundingClientRect();
+    const winH = window.innerHeight;
+    const pct = Math.max(0, Math.min(100, ((winH * 0.65 - rect.top) / rect.height) * 100));
+    fill.style.height = `${pct.toFixed(1)}%`;
+  }
+
+  function renderGallery() {
+    const grid = document.getElementById("galleryGrid");
+    if (!grid || !Array.isArray(CFG.gallery)) return;
+
+    grid.innerHTML = CFG.gallery
+      .map(
+        (item, idx) => `
+        <figure class="gallery-item reveal visible" data-gallery-idx="${idx}" style="margin:0">
+          <div class="gallery-thumb-wrap">
+            <img
+              src="${item.imageSrc}"
+              alt="${pickText(item.title)}"
+              class="gallery-thumb"
+              loading="lazy"
+              onerror="if(this.src!=='${item.imageFallback}')this.src='${item.imageFallback}';"
+            >
+          </div>
+          <figcaption class="gallery-caption-bar">
+            <div>
+              <div class="gallery-caption-title">${pickText(item.title)}</div>
+              <div style="font-size:12px;color:var(--ink-muted)">${pickText(item.caption)}</div>
+            </div>
+            <span class="gallery-zoom-icon">⤢</span>
+          </figcaption>
+        </figure>
+      `
+      )
+      .join("");
+
+    grid.querySelectorAll(".gallery-item").forEach((card) => {
+      card.addEventListener("click", () => {
+        const idx = parseInt(card.getAttribute("data-gallery-idx") || "0", 10);
+        openLightbox(idx);
+      });
+    });
+  }
+
+  function renderRSVP() {
+    const rsvpList = document.getElementById("rsvpList");
+    if (!rsvpList || !Array.isArray(CFG.rsvpContacts)) return;
+
+    rsvpList.innerHTML = CFG.rsvpContacts
+      .map(
+        (c) => `
+        <a href="tel:+${c.phoneClean}" class="rsvp-contact">
+          <strong>${pickText(c.name)}</strong>
+          <span>📞 ${c.phone}</span>
+        </a>
+      `
+      )
+      .join("");
+
+    const closingMsg = document.getElementById("closingMessage");
+    if (closingMsg) {
+      closingMsg.textContent =
+        state.lang === "hi"
+          ? "आपकी स्नेहिल उपस्थिति एवं आशीर्वाद ही हमारे लिए सबसे बड़ा उपहार है।"
+          : "We eagerly await the joy of celebrating these sacred moments with you and your family in South Goa.";
+    }
+  }
+
+  /* ==========================================================================
+     9. LIGHTBOX & LOCATION MODAL + CALENDAR (.ICS) + SHARE ACTIONS
+     ========================================================================== */
+  const lightboxModal = document.getElementById("lightboxModal");
+  const lightboxStage = document.getElementById("lightboxStage");
+  const lightboxCaption = document.getElementById("lightboxCaption");
+
+  function openLightbox(index) {
+    if (!Array.isArray(CFG.gallery) || !CFG.gallery.length) return;
+    state.lightboxIndex = (index + CFG.gallery.length) % CFG.gallery.length;
+    const item = CFG.gallery[state.lightboxIndex];
+    if (lightboxStage) {
+      lightboxStage.innerHTML = `<img src="${item.imageSrc}" alt="${pickText(item.title)}" onerror="if(this.src!=='${item.imageFallback}')this.src='${item.imageFallback}';">`;
+    }
+    if (lightboxCaption) {
+      lightboxCaption.textContent = `${pickText(item.title)} — ${pickText(item.caption)}`;
+    }
+    if (lightboxModal) {
+      lightboxModal.classList.add("open");
+    }
+  }
+
+  document.getElementById("lightboxCloseBtn")?.addEventListener("click", () => {
+    lightboxModal?.classList.remove("open");
+  });
+  document.getElementById("lightboxPrevBtn")?.addEventListener("click", () => {
+    openLightbox(state.lightboxIndex - 1);
+  });
+  document.getElementById("lightboxNextBtn")?.addEventListener("click", () => {
+    openLightbox(state.lightboxIndex + 1);
+  });
+
+  // Venue Location Modal
+  const locationModal = document.getElementById("locationModal");
+  document.getElementById("openLocationModalBtn")?.addEventListener("click", () => {
+    locationModal?.classList.add("open");
+  });
+  document.getElementById("locationModalCloseBtn")?.addEventListener("click", () => {
+    locationModal?.classList.remove("open");
+  });
+
+  // Close modals on backdrop click
+  [locationModal, lightboxModal].forEach((modal) => {
+    modal?.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.remove("open");
+    });
+  });
+
+  // Add to Calendar (.ics download)
+  document.getElementById("addToCalBtn")?.addEventListener("click", () => {
+    const icsContent = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//Sumit & Nidhi Shubh Vivah//EN",
+      "BEGIN:VEVENT",
+      "SUMMARY:Sumit Vyas & Nidhi Dave — Shubh Vivah (Wedding)",
+      "DTSTART:20220222T130000Z",
+      "DTEND:20220222T180000Z",
+      "LOCATION:Fairfield By Marriott Goa Benaulim, South Goa 403716",
+      "DESCRIPTION:Shubh Vivah celebrations of Sumit Vyas & Nidhi Dave at Fairfield By Marriott Goa Benaulim.",
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n");
+
+    const blob = new Blob([icsContent], { type: "text/calendar;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "Sumit-Nidhi-Wedding-Invite.ics";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    showToast("Calendar invite downloaded 📅");
+  });
+
+  // Share, WhatsApp, Copy Link, Save PDF, Back to Top
+  document.getElementById("shareBtn")?.addEventListener("click", async () => {
+    const shareData = {
+      title: "Sumit Vyas & Nidhi Dave — Wedding Invitation",
+      text: "Join us for the Shubh Vivah of Sumit Vyas & Nidhi Dave on 22nd February 2022 at Fairfield By Marriott Goa Benaulim!",
+      url: window.location.href
+    };
+    if (navigator.share) {
+      try {
+        await navigator.share(shareData);
+      } catch (_) {}
+    } else {
+      navigator.clipboard?.writeText(window.location.href);
+      showToast("Invitation link copied!");
+    }
+  });
+
+  document.getElementById("whatsappBtn")?.addEventListener("click", () => {
+    const msg = encodeURIComponent(
+      `॥ ॐ श्री गणेशाय नमः ॥ You are cordially invited to the Shubh Vivah of Sumit Vyas & Nidhi Dave on Tuesday, 22nd Feb 2022 at Fairfield By Marriott Goa Benaulim: ${window.location.href}`
+    );
+    window.open(`https://wa.me/?text=${msg}`, "_blank", "noopener");
+  });
+
+  document.getElementById("copyLinkBtn")?.addEventListener("click", () => {
+    navigator.clipboard?.writeText(window.location.href);
+    showToast("Invitation link copied to clipboard ✨");
+  });
+
+  document.getElementById("savePdfBtn")?.addEventListener("click", () => {
+    window.print();
+  });
+
+  document.getElementById("backToTopBtn")?.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  /* ==========================================================================
+     10. LANGUAGE (EN / HI) & FAMILY SIDE (#BRIDE / #GROOM) TOGGLES
+     ========================================================================== */
+  const langToggleBtn = document.querySelector("[data-lang-toggle]");
+  if (langToggleBtn) {
+    langToggleBtn.addEventListener("click", () => {
+      state.lang = state.lang === "en" ? "hi" : "en";
+      langToggleBtn.textContent = state.lang === "en" ? "हिंदी" : "English";
+
+      // Update Hero Courtyard Plaque & Door Button Labels
+      const setTxt = (id, val) => {
+        const el = document.getElementById(id);
+        if (el) el.textContent = val;
+      };
+      setTxt(
+        "openInvitationBtnText",
+        state.lang === "hi" ? "निमंत्रण खोलें" : "Open Invitation"
+      );
+      setTxt(
+        "celebrationBeginsTitle",
+        state.lang === "hi" ? "शुभ उत्सव का शुभारंभ" : "The Celebration Begins"
+      );
+      setTxt(
+        "celebrationBeginsSub",
+        state.lang === "hi"
+          ? "सुमित एवं निधि के पावन विवाह समारोह में पधारें"
+          : "Enter the Sacred Celebrations of Sumit & Nidhi"
+      );
+      setTxt(
+        "exploreInviteBtnText",
+        state.lang === "hi" ? "निमंत्रण देखें" : "Explore Invitation"
+      );
+
+      renderFormalStationeryCard();
+      renderFunctionsTimeline();
+      renderGallery();
+      renderRSVP();
+      updateAudioUI();
+      if (!state.scratchRevealed) {
+        initScratchCard();
+      }
+    });
+  }
+
+  const sideToggleBtn = document.querySelector("[data-side-toggle]");
+  if (sideToggleBtn) {
+    sideToggleBtn.textContent = state.side === "bride" ? "#groom" : "#bride";
+    sideToggleBtn.addEventListener("click", () => {
+      state.side = state.side === "bride" ? "groom" : "bride";
+      sideToggleBtn.textContent = state.side === "bride" ? "#groom" : "#bride";
+      history.replaceState(null, "", state.side === "bride" ? "#bride" : "#groom");
+      renderFormalStationeryCard();
+      showToast(
+        state.side === "bride"
+          ? "Viewing Bride's Family (Dave Parivar) Edition"
+          : "Viewing Groom's Family (Vyas Parivar) Edition"
+      );
+    });
+  }
+
+  /* ==========================================================================
+     11. INTERSECTION OBSERVER FOR SCROLL REVEALS & INITIALIZATION
+     ========================================================================== */
+  function initScrollReveals() {
+    const items = document.querySelectorAll(".reveal");
+    if (!("IntersectionObserver" in window)) {
+      items.forEach((el) => el.classList.add("visible"));
+      return;
+    }
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.12 }
+    );
+    items.forEach((el) => obs.observe(el));
+  }
+
+  // Initialize Everything
+  initPetals();
+  initScratchCard();
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+  renderFormalStationeryCard();
+  renderFunctionsTimeline();
+  renderGallery();
+  renderRSVP();
+  initScrollReveals();
+})();
+
+</script>
+</body>
+</html>
